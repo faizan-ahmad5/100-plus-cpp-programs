@@ -55,10 +55,6 @@ To utilize the programs in this repository:
    - Commit messages are meaningful.
    - The concept being demonstrated is explained in comments.
 
-##  🌟 Acknowledgments
-This repository is a collaborative effort and wouldn't be possible without the C++ programming community and various educational resources. Special thanks to all contributors and those who have provided valuable feedback and improvements.
-
-We hope you find this repository beneficial in your journey to mastering C++.
 
 ## 📬 Contact
 For any questions or suggestions, feel free to reach out:
