@@ -1,3 +1,5 @@
+// This program prompts the user to enter two strings, then displays the strings, their lengths, their concatenation, and specific characters from each string.
+
 #include <iostream>
 #include <string>
 using namespace std;

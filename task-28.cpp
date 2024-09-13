@@ -1,3 +1,5 @@
+// This program prompts the user to enter two fractions (numerator and denominator for each), then calculates and displays their sum, difference, product, and division.
+
 #include <iostream>
 using namespace std;
 
