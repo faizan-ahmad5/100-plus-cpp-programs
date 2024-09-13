@@ -95,7 +95,7 @@ To utilize the programs in this repository:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/100-plus-cpp-programs.git
+   git clone https://github.com/faizan-ahmad5/100-plus-cpp-programs.git
    ```
 
 2. Navigate to the directory containing the cloned repository:
@@ -124,4 +124,3 @@ For any questions or suggestions, feel free to reach out:
 LinkedIn: [https://www.linkedin.com/in/faizan-ahmad-khan5/](https://www.linkedin.com/in/faizan-ahmad-khan5/)
 
 Email: fa3n20004@gmail.com
-```
