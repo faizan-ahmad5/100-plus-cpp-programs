@@ -1,17 +1,23 @@
-// This program repeatedly prompts the user to enter a number until a non-positive number is entered.
+// Calculate the sum of odd natural numbers 1 + 3 + 5 + 7 +……………..+ n using while loop.Take n as input from user
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
+    int n, sum = 0;
+    cout << "Enter the nth number: ";
+    cin >> n;
 
-    int x = 1;
-    do
+    int i = 1;
+    while (i <= n)
     {
-        cout << "Enter a number :";
-        cin >> x;
-    } while (x > 0);
-
+        if (i % 2 != 0)
+        {
+            sum = sum + i;
+        }
+        i++;
+    }
+    cout << "The sum of odd natural numbers is = " << sum;
     return 0;
 }

@@ -1,27 +1,24 @@
-// Write a C++ program, take two integer i(starting point) and n(ending point) from user and print all
-// even numbers between i to n using while loop.For example : Let say i = 5; and n = 20;
-// Output should be(6 8 10 12 14 16 18 20).
+// Write a C++ program that prints a pyramid pattern of asterisks. The pattern should have 5 rows, with the number
+// of asterisks in each row increasing by 2 for each subsequent row, starting with 1 asterisk in the first row.
+// *
+// ***
+// *****
+// *******
+// *********
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int firstNum, secondNum;
-    cout << "Enter the starting number :";
-    cin >> firstNum;
-    cout << "Enter the ending number :";
-    cin >> secondNum;
-    int i = firstNum;
-    while (i <= secondNum)
+    for (int i = 1; i <= 5; i++)
     {
-        if (i % 2 == 0)
+        string sum = "";
+        for (int j = 1; j <= (2 * i - 1); j++)
         {
-            cout << i << " ";
+            sum += "*";
         }
-
-        i++;
+        cout << sum << endl;
     }
-
     return 0;
 }

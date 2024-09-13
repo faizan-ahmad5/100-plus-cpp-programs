@@ -1,30 +1,26 @@
-//  (continue statement): Program to calculate the sum
-// of numbers (10 numbers maximum) using for loop. If the
-// user enters a negative number, it's not added to the result
+// Write a function which calculates & returns area of the circle.Radius should be your
+// function parameter.Take appropriate data types.
 
 #include <iostream>
 using namespace std;
 
-int main()
+float circleArea(float radius)
 {
 
-    int sum = 0;
-    int userValue;
+    float area = 3.14159 * radius * radius;
+    return area;
+}
 
-    for (int i = 1; i <= 10; i++)
-    {
-        cout << "Enter a number : ";
-        cin >> userValue;
+int main()
+{
+    float radius;
 
-        if (userValue <= 0)
-        {
-            continue;
-        }
+    cout << "Enter the radius of the circle: ";
+    cin >> radius;
 
-        sum = sum + userValue;
-    }
+    float area = circleArea(radius);
 
-    cout << "The sum of all the numbers is = " << sum << endl;
+    cout << "The area of the circle with radius " << radius << " is: " << area << endl;
 
     return 0;
 }

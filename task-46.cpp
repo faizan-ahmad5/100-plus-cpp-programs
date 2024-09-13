@@ -1,26 +1,29 @@
-// Write a function which calculates & returns area of the circle.Radius should be your
-// function parameter.Take appropriate data types.
-
+// Write a function that takes two parameters x and y as input and returns max of two input numbers
 #include <iostream>
 using namespace std;
 
-float circleArea(float radius)
+int maxOfTwoNumbers(int x, int y)
 {
-
-    float area = 3.14159 * radius * radius;
-    return area;
+    if (x > y)
+    {
+        return x;
+    }
+    else
+    {
+        return y;
+    }
 }
 
 int main()
 {
-    float radius;
+    int x, y;
+    cout << "Enter first number: ";
+    cin >> x;
+    cout << "Enter second number: ";
+    cin >> y;
 
-    cout << "Enter the radius of the circle: ";
-    cin >> radius;
-
-    float area = circleArea(radius);
-
-    cout << "The area of the circle with radius " << radius << " is: " << area << endl;
+    int max = maxOfTwoNumbers(x, y);
+    cout << "The maximum number is: " << max << endl;
 
     return 0;
 }

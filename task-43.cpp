@@ -1,13 +1,12 @@
-//  (continue statement): Program to calculate the sum
-// of numbers (10 numbers maximum) using for loop. If the
-// user enters a negative number, it's not added to the result
+// (break statement): Program to calculate the sum of
+// numbers (10 numbers maximum) using for loop. If the user
+// enters a negative number, the loop terminates
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-
     int sum = 0;
     int userValue;
 
@@ -15,15 +14,13 @@ int main()
     {
         cout << "Enter a number : ";
         cin >> userValue;
+        sum = sum + userValue;
 
         if (userValue <= 0)
         {
-            continue;
+            break;
         }
-
-        sum = sum + userValue;
     }
-
     cout << "The sum of all the numbers is = " << sum << endl;
 
     return 0;
