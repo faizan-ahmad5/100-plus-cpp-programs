@@ -1,3 +1,5 @@
+// This program repeatedly prompts the user to enter a number until a non-positive number is entered.
+
 #include <iostream>
 using namespace std;
 
