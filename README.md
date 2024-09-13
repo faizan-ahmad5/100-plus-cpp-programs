@@ -1,5 +1,4 @@
-Here's the complete `README.md` file in Markdown format for your `100-plus-cpp-programs` repository:
-
+Here's the updated `README.md` file including the new tasks:
 
 # 100-plus-cpp-programs
 
@@ -12,7 +11,7 @@ Welcome to the **100-plus-cpp-programs** repository! This collection contains ov
 
 2. **Favorite Personality Quote**:  
    Write a C++ program that displays the name and quote of your favorite personality. Use the escape sequence `\"` to put the quote in double quotation marks. Example output:  
-   `Friedrich Nietzsche once said, "He who has a why to live can bear almost any how.`
+   `Friedrich Nietzsche once said, "He who has a why to live can bear almost any how."`
 
 3. **Print a Pattern**:  
    Write a C++ program to print the following pattern using escape sequences:
@@ -43,11 +42,11 @@ Welcome to the **100-plus-cpp-programs** repository! This collection contains ov
 
 10. **Temperature Conversion**:  
     Write a C++ program that takes temperature in Fahrenheit from the user and converts it to Celsius and Kelvin using the formulas:
-    - \(C = (F – 32) / 1.8 \)
+    - \( C = \frac{(F - 32)}{1.8} \)
     - \( K = C + 273 \)
 
 11. **Simple Interest Calculation**:  
-    Write a program to calculate simple interest for given values: \( P = 4000 \), \( T = 2 \), \( R = 5.5 \). Use the formula \( I = P*T*R/100 \).
+    Write a program to calculate simple interest for given values: \( P = 4000 \), \( T = 2 \), \( R = 5.5 \). Use the formula \( I = \frac{P \cdot T \cdot R}{100} \).
 
 12. **Size of Data Types**:  
     Write a C++ program to find the size of various data types: `int`, `short int`, `float`, `double`, `bool`, and `char`. Use the `sizeof` operator.
@@ -60,6 +59,54 @@ Welcome to the **100-plus-cpp-programs** repository! This collection contains ov
 
 15. **Complex Number Addition**:  
     Write a C++ program that takes two complex numbers from the user and adds them. Print the resultant complex number.
+
+16. **Forward and Reversed Order**:  
+    Write a C++ program to prompt the user to input 3 integer values and print these values in forward and reversed order.
+
+17. **Integer and Character Display**:  
+    Write a C++ program that takes an integer value and a character from the user and displays both on the console window.
+
+18. **Sphere Calculations**:  
+    Write a program that takes the radius of a sphere as input from the user and outputs:
+    - The diameter of the sphere
+    - The surface area of the sphere
+    - The volume of the sphere
+
+19. **Time Conversion**:  
+    Write a C++ program that takes seconds from the user and displays the time in hours, minutes, and seconds format. For example, if the user enters 3700, the output should be "1 hour 1 minute and 40 seconds."
+
+20. **Variable Swapping**:  
+    Write a C++ program to swap the values of two variables both with and without using a third variable.
+
+21. **String Copy**:  
+    Write a C++ program to enter a string `s1` and copy it to another string `s2`.
+
+22. **Polynomial Evaluation**:  
+    Write a program that asks the user to enter a value for `x` and then displays the value of the polynomial \(2x^5 + 3x^4 - x^3 - 2x^2 + 7x - 6\). To calculate \(x^5\), use `pow(x, 5)`. Include the `math.h` library for `pow`.
+
+23. **Quotient and Remainder**:  
+    Write a C++ program to find the quotient and remainder of two integers by taking input from the user.
+
+24. **Previous Character**:  
+    Write a C++ program that takes a character and displays its previous character using the decrement operator.
+
+25. **Complex Calculation**:  
+    Write a program that asks for a number input from the keyboard, adds 34 to it, divides it by 2, takes the modulus with 4, adds 4, and then multiplies the resultant value by 5. Display the result.
+
+26. **Expression Calculation**:  
+    Write a program in C++ to compute the expression \((25 * 3.5 - 3 * 7.5) + \frac{3}{40.5 - 4.5}\) and print the output.
+
+27. **String Operations**:  
+    Write a C++ program that prompts the user to enter two strings, then displays the strings, their lengths, their concatenation, and specific characters from each string.
+
+28. **Fraction Operations**:  
+    Write a C++ program that prompts the user to enter two fractions (numerator and denominator for each), then calculates and displays their sum, difference, product, and division.
+
+29. **Distance Calculation**:  
+    Write a C++ program to calculate the distance between two points where \(x1\), \(y1\), \(x2\), and \(y2\) are all double values.
+
+30. **Age Check**:  
+    Write a C++ program that checks the age of Fahad and Khurram and displays the appropriate message using if statements only.
 
 ## 📋 Topics Covered
 
