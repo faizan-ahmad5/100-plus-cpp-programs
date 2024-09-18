@@ -103,8 +103,51 @@ Welcome to the **100-plus-cpp-programs** repository! This collection contains ov
 29. **Distance Calculation**:  
     Write a C++ program to calculate the distance between two points where \(x1\), \(y1\), \(x2\), and \(y2\) are all double values.
 
-30. **Age Check**:  
-    Write a C++ program that checks the age of Fahad and Khurram and displays the appropriate message using if statements only.
+30. **Age Check (if statements only)**:  
+    Write a C++ program that checks the age of Fahad and Khurram and displays the appropriate message using **if statements only**.
+
+31. **Age Check (nested if statements only)**:  
+    Write a C++ program that checks the age of Fahad and Khurram and displays the appropriate message using **nested if statements only**.
+
+32. **Number Comparison**:  
+    Write a C++ program that takes an integer value from the user and checks if it’s greater than 10 and less than or equal to 20. Print `1` if yes and print `0` if no.
+
+33. **String Comparison**:  
+    Write a C++ program that takes two strings as input from the user and checks if both strings are equal.
+
+34. **Even or Odd**:  
+    Using if-else, determine whether a value is even or odd.
+
+35. **Greatest of Three Numbers**:  
+    Write a C++ program that prompts the user to input three integer values and find the greatest value of the three (hint: use logical operators).
+
+36. **Vowel or Consonant**:  
+    Write a C++ program to check whether an alphabet entered by the user is a vowel (lower and upper case) or a consonant (lower and upper case) using if-else statements (hint: use logical operators).
+
+37. **Temperature State**:  
+    Write a C++ program that prompts the user to input temperature in centigrade and display a message according to the temperature state below:
+    - Temp < 0: Freezing weather
+    - Temp 0-12: Very Cold weather
+    - Temp 12-22: Cold weather
+    - Temp 22-32: Normal Temperature
+    - Temp 32-42: Hot
+    - Temp >= 42: Very Hot
+
+38. **Grade Calculation**:  
+    Write a C++ program that takes quiz marks, midterm marks, and final term marks from the user and determines the student’s grade based on the following rules:
+    - If the average mark is greater than or equal to 95: grade A+
+    - If the average mark is between 85 and 95: grade A
+    - If the average mark is between 75 and 85: grade B
+    - If the average mark is between 55 and 75: grade C
+    - If the average mark is below 55: grade F
+
+39. **Maximum Number (Ternary Operator)**:  
+    Write a C++ program that prompts the user to input two numbers and then determines the largest number using the **ternary operator**.
+
+40. **String Equality Check (Ternary Operator)**:  
+    Write a C++ program that takes two strings as input from the user and checks if both strings are equal or not using the **ternary operator**.
+
+
 
 ## 📋 Topics Covered
 
