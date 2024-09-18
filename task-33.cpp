@@ -1,22 +1,24 @@
-/* Write a C++ program, take an integer value from user and check if it’s greater than 10 and less
-than or equal to 20. Print 1 if yes and print 0 if no */
+/*Write a C++ program, take two strings as input from user and check if both strings are equal
+or not. */
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int value;
-    cout << "Enter an integer value :";
-    cin >> value;
+    string str_1, str_2;
+    cout << "Enter the first string :";
+    getline(cin, str_1);
+    cout << "Enter the second string :";
+    getline(cin, str_2);
 
-    if (value > 10 && value <= 20)
+    if (str_1 == str_2)
     {
-        cout << "1" << endl;
+        cout << "Both the strings are equal ";
     }
     else
     {
-        cout << "0";
+        cout << "Both the string are not equal";
     }
 
     return 0;

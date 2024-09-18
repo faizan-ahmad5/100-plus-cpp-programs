@@ -1,16 +1,17 @@
-// Write a C++ program to find maximum number using ternary operator
+// .Write a C++ program, take two strings as input from user and check
+// if both strings are equal or not using ternary operator
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int num1, num2;
-    cout << "Enter the first number :";
-    cin >> num1;
-    cout << "Enter the second number :";
-    cin >> num2;
-    int max = (num1 > num2) ? num1 : num2;
-    cout << "The maximum number is " << max;
+    string strFirst, strSecond;
+    cout << "Enter first string :";
+    getline(cin, strFirst);
+    cout << "Enter second string :";
+    getline(cin, strSecond);
+    string equalStr = strFirst == strSecond ? "Both strings are equal" : "Both strings are not equal";
+    cout << equalStr;
     return 0;
 }

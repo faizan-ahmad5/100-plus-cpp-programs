@@ -1,21 +1,32 @@
-// Using if-else, determine whether the value is Even or Odd.
+/*Write a C++ program that prompts the user to input three integer values and find the greatest
+value of the three values.
+(Hint: Use logical operator) */
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int num;
-    cout << "Enter a number :";
-    cin >> num;
+    int num_1, num_2, num_3;
+    cout << "Enter the first integer :";
+    cin >> num_1;
+    cout << "Enter the second integer :";
+    cin >> num_2;
+    cout << "Enter the third integer :";
+    cin >> num_3;
 
-    if (num % 2 == 0)
+    if (num_1 > num_2 && num_1 > num_3)
     {
-        cout << "Even number";
+        cout << "First number is the greatest";
+    }
+    else if (num_2 > num_1 && num_2 > num_3)
+    {
+        cout << "Second number is the greatest";
     }
     else
     {
-        cout << "Odd number";
+        cout << "Third number is the greatest";
     }
+
     return 0;
 }

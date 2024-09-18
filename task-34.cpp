@@ -1,25 +1,21 @@
-/*Write a C++ program, take two strings as input from user and check if both strings are equal
-or not. */
+// Using if-else, determine whether the value is Even or Odd.
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    string str_1, str_2;
-    cout << "Enter the first string :";
-    getline(cin, str_1);
-    cout << "Enter the second string :";
-    getline(cin, str_2);
+    int num;
+    cout << "Enter a number :";
+    cin >> num;
 
-    if (str_1 == str_2)
+    if (num % 2 == 0)
     {
-        cout << "Both the strings are equal ";
+        cout << "Even number";
     }
     else
     {
-        cout << "Both the string are not equal";
+        cout << "Odd number";
     }
-
     return 0;
 }

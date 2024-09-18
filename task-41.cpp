@@ -1,17 +1,18 @@
-// .Write a C++ program, take two strings as input from user and check
-// if both strings are equal or not using ternary operator
-
+/**
+ * Prompts the user to enter a number repeatedly until a non-positive number is entered.
+ *
+ */
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    string strFirst, strSecond;
-    cout << "Enter first string :";
-    getline(cin, strFirst);
-    cout << "Enter second string :";
-    getline(cin, strSecond);
-    string equalStr = strFirst == strSecond ? "Both strings are equal" : "Both strings are not equal";
-    cout << equalStr;
+    int x = 1;
+    do
+    {
+        cout << "Enter a number :";
+        cin >> x;
+    } while (x > 0);
+
     return 0;
 }

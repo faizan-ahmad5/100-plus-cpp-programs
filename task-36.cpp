@@ -1,31 +1,24 @@
-/*Write a C++ program that prompts the user to input three integer values and find the greatest
-value of the three values.
-(Hint: Use logical operator) */
+/*Write a C++ program to check whether an alphabet entered by user is a vowel (lower and
+upper case) or a consonant (lower and upper case) using if else statement.
+(Hint: Use logical operator)*/
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int num_1, num_2, num_3;
-    cout << "Enter the first integer :";
-    cin >> num_1;
-    cout << "Enter the second integer :";
-    cin >> num_2;
-    cout << "Enter the third integer :";
-    cin >> num_3;
+    char alphabet;
+    cout << "Enter an alphabet: ";
+    cin >> alphabet;
 
-    if (num_1 > num_2 && num_1 > num_3)
+    if (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == 'o' || alphabet == 'u' ||
+        alphabet == 'A' || alphabet == 'E' || alphabet == 'I' || alphabet == 'O' || alphabet == 'U')
     {
-        cout << "First number is the greatest";
-    }
-    else if (num_2 > num_1 && num_2 > num_3)
-    {
-        cout << "Second number is the greatest";
+        cout << "The alphabet is a vowel";
     }
     else
     {
-        cout << "Third number is the greatest";
+        cout << "The alphabet is a consonant";
     }
 
     return 0;

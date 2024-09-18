@@ -1,45 +1,45 @@
-/*Write a C++ program that prompts the user to input temperature in centigrade and display a
-message according to temperature state below:
-Temp < 0 then Freezing weather
-Temp 0-12 then Very Cold weather
-Temp 12-22 then Cold weather
-Temp 22-32 then Normal in Temperature
-Temp 32-42 then Its Hot
-Temp >=42 then Its Very Hot
-*/
+/* Write a C++ program that take quiz marks, midterm marks and final term marks from user
+and determine the student’s grade based on the following rules:
+if the average mark is greater than and equal to 95, grade will be A+
+if the average mark greater than and equal to 85 and less than 95, grade will be A
+if the average mark greater than and equal to 75 and less than 85, grade will be B
+if the average mark greater than and equal to 55 and less than 75, grade will be C
+if the average mark less than 55, grade will be F */
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int temp;
-    cout << "Enter the value of temperature in centigrade: ";
-    cin >> temp;
+    int quizMarks, midMarks, finalMarks;
 
-    if (temp < 0)
+    cout << "Enter your quiz marks : ";
+    cin >> quizMarks;
+    cout << "Enter your midterm marks : ";
+    cin >> midMarks;
+    cout << "Enter your finalterm marks : ";
+    cin >> finalMarks;
+    int averageMarks = (quizMarks + midMarks + finalMarks) / 3;
+
+    if (averageMarks >= 95)
     {
-        cout << "Freezing weather";
+        cout << "Grade is A+";
     }
-    else if (temp >= 0 && temp <= 12)
+    else if (averageMarks >= 85 && averageMarks < 95)
     {
-        cout << "Very Cold weather";
+        cout << "Grade is A";
     }
-    else if (temp > 12 && temp <= 22)
+    else if (averageMarks >= 75 && averageMarks < 85)
     {
-        cout << "Cold weather";
+        cout << "Grade is B";
     }
-    else if (temp > 22 && temp <= 32)
+    else if (averageMarks >= 55 && averageMarks < 75)
     {
-        cout << "Normal in Temperature";
-    }
-    else if (temp > 32 && temp <= 42)
-    {
-        cout << "It's Hot";
+        cout << "Grade is C";
     }
     else
     {
-        cout << "It's Very Hot";
+        cout << "Grade is F";
     }
 
     return 0;

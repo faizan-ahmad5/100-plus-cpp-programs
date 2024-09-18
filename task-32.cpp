@@ -1,52 +1,22 @@
-/*Write a C++ program that checks the age of Fahad and Khurram and displays the appropriate
-message using nested if statements only*/
+/* Write a C++ program, take an integer value from user and check if it’s greater than 10 and less
+than or equal to 20. Print 1 if yes and print 0 if no */
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int fahadAge, KhurramAge;
-    fahadAge = 15;
-    KhurramAge = 21;
+    int value;
+    cout << "Enter an integer value :";
+    cin >> value;
 
-    if (fahadAge > KhurramAge)
+    if (value > 10 && value <= 20)
     {
-        cout << "Fahad is older than Khurram." << endl;
-        if (fahadAge >= 18)
-        {
-            cout << "Fahad is an adult." << endl;
-        }
-        if (fahadAge < 18)
-        {
-            cout << "Fahad is not an adult." << endl;
-        }
+        cout << "1" << endl;
     }
-
-    if (KhurramAge > fahadAge)
+    else
     {
-        cout << "Khurram is older than Fahad." << endl;
-        if (KhurramAge >= 18)
-        {
-            cout << "Khurram is an adult." << endl;
-        }
-        if (KhurramAge < 18)
-        {
-            cout << "Khurram is not an adult." << endl;
-        }
-    }
-
-    if (fahadAge == KhurramAge)
-    {
-        cout << "Fahad and Khurram are of the same age." << endl;
-        if (fahadAge >= 18)
-        {
-            cout << "Both are adults." << endl;
-        }
-        if (fahadAge < 18)
-        {
-            cout << "Both are not adults." << endl;
-        }
+        cout << "0";
     }
 
     return 0;
