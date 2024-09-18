@@ -94,7 +94,7 @@ Welcome to the **100-plus-cpp-programs** repository! This collection contains ov
     Write a program that asks for a number input from the keyboard, adds 34 to it, divides it by 2, takes the modulus with 4, adds 4, and then multiplies the resultant value by 5. Display the result.
 
 26. **Expression Calculation**:  
-    Write a program in C++ to compute the expression \((25 * 3.5 - 3 * 7.5) + \frac{3}{40.5 - 4.5}\) and print the output.
+    Write a program in C++ to compute the expression (25 * 3.5 - 3 * 7.5) + 3 / (40.5 - 4.5) and print the output.
 
 27. **String Operations**:  
     Write a C++ program that prompts the user to enter two strings, then displays the strings, their lengths, their concatenation, and specific characters from each string.
