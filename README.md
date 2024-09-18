@@ -147,6 +147,42 @@ Welcome to the **100-plus-cpp-programs** repository! This collection contains ov
 40. **String Equality Check (Ternary Operator)**:  
     Write a C++ program that takes two strings as input from the user and checks if both strings are equal or not using the **ternary operator**.
 
+41. **Repeated Number Entry**:  
+    Write a C++ program that prompts the user to enter a number repeatedly until a non-positive number is entered.
+
+42. **Simple Calculator**:  
+    Write a C++ program to make a simple calculator using a switch case to perform addition, subtraction, multiplication, or division.
+
+43. **Sum of Numbers (Using For Loop)**:  
+    Write a C++ program to calculate the sum of up to 10 numbers using a for loop. If the user enters a negative number, the loop terminates.
+
+44. **Sum of Numbers (Using For Loop, Skip Negatives)**:  
+    Write a C++ program to calculate the sum of up to 10 numbers using a for loop. If the user enters a negative number, it should not be added to the result.
+
+45. **Area of Circle Function**:  
+    Write a function that calculates and returns the area of a circle. The radius should be a parameter of your function. Use appropriate data types.
+
+46. **Maximum of Two Numbers Function**:  
+    Write a function that takes two parameters, `x` and `y`, and returns the maximum of the two numbers.
+
+47. **Even Numbers Between Two Points**:  
+    Write a C++ program that takes two integers, `i` (starting point) and `n` (ending point), from the user and prints all even numbers between `i` and `n` using a while loop. For example, if `i = 5` and `n = 20`, the output should be: `6 8 10 12 14 16 18 20`.
+
+48. **Sum of Odd Natural Numbers**:  
+    Write a C++ program to calculate the sum of odd natural numbers (1 + 3 + 5 + 7 + … + n) using a while loop. Take `n` as input from the user.
+
+49. **Pyramid Pattern of Asterisks**:  
+    Write a C++ program that prints a pyramid pattern of asterisks. The pattern should have 5 rows, with the number of asterisks in each row increasing by 2 for each subsequent row, starting with 1 asterisk in the first row:
+    ```
+    *
+    ***
+    *****
+    *******
+    *********
+    ```
+
+50. **Reverse Whole Numbers**:  
+    Write a C++ program to print whole numbers in reverse from `n` to `0` using a while loop.
 
 
 ## 📋 Topics Covered
