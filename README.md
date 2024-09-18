@@ -1,5 +1,3 @@
-Here's the updated `README.md` file including the new tasks:
-
 # 100-plus-cpp-programs
 
 Welcome to the **100-plus-cpp-programs** repository! This collection contains over 100 C++ programs, designed to cover a wide range of topics from basic concepts to more advanced techniques. Whether you're a beginner or an experienced programmer looking to enhance your skills, this repository offers valuable resources for learning and practice.
