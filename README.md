@@ -42,11 +42,11 @@ Welcome to the **100-plus-cpp-programs** repository! This collection contains ov
 
 10. **Temperature Conversion**:  
     Write a C++ program that takes temperature in Fahrenheit from the user and converts it to Celsius and Kelvin using the formulas:
-    - \( C = \frac{(F - 32)}{1.8} \)
-    - \( K = C + 273 \)
+    - C = (F – 32) / 1.8
+    - K = C + 273
 
 11. **Simple Interest Calculation**:  
-    Write a program to calculate simple interest for given values: \( P = 4000 \), \( T = 2 \), \( R = 5.5 \). Use the formula \( I = \frac{P \cdot T \cdot R}{100} \).
+    Write a program to calculate simple interest for given values: \( P = 4000 \), \( T = 2 \), \( R = 5.5 \). Use the formula I = P*T*R / 100.
 
 12. **Size of Data Types**:  
     Write a C++ program to find the size of various data types: `int`, `short int`, `float`, `double`, `bool`, and `char`. Use the `sizeof` operator.
