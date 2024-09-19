@@ -218,6 +218,81 @@ Write a C++ program that takes the scores of three subjects from the user and de
 60. **Leap Year Check (Nested If Statements)**  
 Write a C++ program that takes a year as input from the user and checks if it is a leap year using nested if statements.
 
+61. **Print First 10 Natural Numbers**  
+Write a C++ program that prints the first 10 natural numbers using a for loop.
+
+62. **Sum of Odd Numbers from 1 to 100**  
+Write a C++ program that calculates and prints the sum of all odd numbers from 1 to 100 using a for loop.
+
+63. **Factorial Using For Loop**  
+Write a C++ program that prints the factorial of a given number using a for loop.
+
+64. **Right-Angled Triangle Pattern**  
+Write a C++ program that prints a right-angled triangle pattern of stars with a height of 5 using nested for loops.
+
+65. **5x5 Matrix of Numbers**  
+Write a C++ program that prints a 5x5 matrix filled with numbers from 1 to 25 using nested for loops.
+
+66. **Transpose of a 3x3 Matrix**  
+Write a C++ program that prints the transpose of a 3x3 matrix entered by the user using nested for loops.
+
+67. **Basic Summation**  
+Write a C++ program using a while loop to calculate the sum of the first 20 positive integers.
+
+68. **Factorial Calculation Using While Loop**  
+Write a C++ program that calculates the factorial of a given number using a while loop.
+
+69. **Digit Count**  
+Write a C++ program using a while loop to count the number of digits in a given integer.
+
+70. **Reverse Digits**  
+Write a C++ program that reverses the digits of an integer using a while loop.
+
+71. **Multiplication Table (1 to 10)**  
+Write a C++ program using nested while loops to print the multiplication table from 1 to 10.
+
+72. **Prime Numbers Matrix**  
+Write a C++ program using nested while loops to print a matrix of the first 5 prime numbers in each row.
+
+73. **Pattern Printing**  
+Write a C++ program using nested while loops to print the following pattern:  
+ ```
+ *
+ **
+ ***
+ ****
+ *****
+ ```
+
+74. **Sum of Matrix Elements**  
+Write a C++ program using nested while loops to calculate the sum of all elements in a 3x3 matrix.
+
+75. **Early Termination**  
+Write a C++ program that reads integers from the user in a while loop and terminates the loop when the user enters a negative number. Print the sum of all entered positive numbers before the user enters a negative number.
+
+76. **Simple Menu with Break**  
+Write a C++ program that displays a menu to the user in a while loop. Allow the user to choose options and use the break statement to exit the menu when they select the option to quit.
+
+77. **Number Guessing Game**  
+Write a C++ program where the user has to guess a randomly generated number between 1 and 100. Use a while loop to allow multiple attempts and use the break statement to exit the loop when the correct number is guessed.
+
+78. **Sum Until Zero**  
+Write a C++ program that continually asks the user to enter numbers and adds them together. Use a break statement to exit the loop and print the total sum when the user enters zero.
+
+79. **Matrix Search**  
+Write a C++ program using nested while loops to search for a specific value in a 4x4 matrix. Use a break statement to exit the inner loop when the value is found, and print the position of the value.
+
+80. **Pattern with Condition**  
+Write a C++ program using nested while loops to print the following pattern, but break the inner loop when the number exceeds 5:  
+ ```
+ 1  
+ 1 2  
+ 1 2 3  
+ 1 2 3 4  
+ 1 2 3 4 5  
+ ```
+
+
 
 ## 📋 Topics Covered
 
