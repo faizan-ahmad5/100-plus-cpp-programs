@@ -184,6 +184,40 @@ Welcome to the **100-plus-cpp-programs** repository! This collection contains ov
 50. **Reverse Whole Numbers**:  
     Write a C++ program to print whole numbers in reverse from `n` to `0` using a while loop.
 
+51. **Display Days of Two Weeks (Nested For Loop)**  
+Write a C++ program to display the days of two weeks using a nested for loop. The outer loop should represent the weeks (2 weeks), and the inner loop should represent the days (4 days per week).
+
+52. **Check Even Number**  
+Write a C++ program that takes an integer input from the user and checks if the number is even. If it is even, print `"The number is even"`.
+
+53. **Check Uppercase Character**  
+Write a C++ program that takes a character input from the user and checks if it is an uppercase letter. If it is, print `"The character is uppercase"`.
+
+54. **Check Divisibility by 5**  
+Write a C++ program that takes an integer input from the user and checks if the number is divisible by 5. If it is divisible, print `"The number is divisible by 5"`.
+
+55. **Check Vowel or Consonant**  
+Write a C++ program that takes a character input from the user and checks if it is a vowel or consonant. Print `"Vowel"` if it is a vowel; otherwise, print `"Consonant"`.
+
+56. **Categorize Age**  
+Write a C++ program that takes the age of a person as input and categorizes them into the following categories:  
+- **Child** (age < 13)  
+- **Teenager** (13 <= age < 20)  
+- **Adult** (20 <= age < 60)  
+- **Senior** (age >= 60)
+
+57. **Find Largest, Second Largest, and Smallest**  
+Write a C++ program that takes three float numbers as input and prints which number is the largest, the second largest, and the smallest.
+
+58. **Check Positive, Negative, or Zero (Nested If Statements)**  
+Write a C++ program that takes an integer input from the user and prints whether the number is positive, negative, or zero using nested if statements.
+
+59. **Pass or Fail**  
+Write a C++ program that takes the scores of three subjects from the user and determines if the student has passed. A student passes if all three scores are greater than or equal to 50.
+
+60. **Leap Year Check (Nested If Statements)**  
+Write a C++ program that takes a year as input from the user and checks if it is a leap year using nested if statements.
+
 
 ## 📋 Topics Covered
 
