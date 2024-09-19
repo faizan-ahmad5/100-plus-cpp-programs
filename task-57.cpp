@@ -1,29 +1,91 @@
-// Write a C++ program that takes a character input from the user and checks if it is a vowel or consonant.
-// Print "Vowel" if it is a vowel, otherwise print "Consonant".
+// Write a C++ program that takes three float numbers as input and prints which number is the largest,
+//  the second largest, and the smallest.
 
 #include <iostream>
-#include <cctype>
 using namespace std;
 
 int main()
 {
-    char alphabet;
+    float num1, num2, num3;
 
-    cout << "Enter an alphabet: ";
-    cin >> alphabet;
+    cout << "Enter first float number: ";
+    cin >> num1;
+    cout << "Enter the second float number: ";
+    cin >> num2;
+    cout << "Enter the third float number: ";
+    cin >> num3;
 
-    // Convert the character to lowercase
-    alphabet = tolower(alphabet);
+    float largest, second_largest, smallest;
 
-    // Check if the character is a vowel
-    if (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == 'o' || alphabet == 'u')
+    if (num1 >= num2 && num1 >= num3)
     {
-        cout << "Vowel" << endl;
+        largest = num1;
+        if (num2 >= num3)
+        {
+            second_largest = num2;
+            smallest = num3;
+        }
+        else
+        {
+            second_largest = num3;
+            smallest = num2;
+        }
+    }
+    else if (num2 >= num1 && num2 >= num3)
+    {
+        largest = num2;
+        if (num1 >= num3)
+        {
+            second_largest = num1;
+            smallest = num3;
+        }
+        else
+        {
+            second_largest = num3;
+            smallest = num1;
+        }
     }
     else
     {
-        cout << "Consonant" << endl;
+        largest = num3;
+        if (num1 >= num2)
+        {
+            second_largest = num1;
+            smallest = num2;
+        }
+        else
+        {
+            second_largest = num2;
+            smallest = num1;
+        }
     }
 
+    cout << "The number " << largest << " is the largest number" << endl;
+    cout << "The number " << second_largest << " is the second largest number" << endl;
+    cout << "The number " << smallest << " is the smallest number";
+
+    //     include<iostream>
+    // #include <algorithm>
+    //         using namespace std;
+
+    //     int main()
+    //     {
+    //         float nums[3];
+    //         cout << "Enter the first number :";
+    //         cin >> nums[0];
+    //         cout << "Enter hte seond number :";
+    //         cin >> nums[1];
+    //         cout << "Enter the third number :";
+    //         cin >> nums[2];
+
+    //         sort(nums, nums + 3);
+
+    //         float smallest = nums[0];
+    //         float second_largest = nums[1];
+    //         float largest = nums[2];
+
+    //         cout << "the largest is" << largest << endl;
+    //         cout << "the second largest is" << second_largest << endl;
+    //         cout << "the smallest " << smallest;
     return 0;
 }

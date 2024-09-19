@@ -1,30 +1,38 @@
-// Write a C++ program that takes an integer input from the user and prints
-// if the number is positive, negative, or zero using nested if statements.
+// Write a C++ program that takes a year as input from the user and checks
+// if it is a leap year using nested if statements.
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int userInput;
+    int year;
 
-    cout << "Enter an integer number :";
-    cin >> userInput;
+    cout << "Enter year :";
+    cin >> year;
 
-    if (userInput >= 0)
+    if (year % 4 == 0)
     {
-        if (userInput > 0)
+        if (year % 100 == 0)
         {
-            cout << "The numver is positive";
+
+            if (year % 400 == 0)
+            {
+                cout << year << " is a leap year." << endl;
+            }
+            else
+            {
+                cout << year << " is not a leap year." << endl;
+            }
         }
         else
         {
-            cout << "The number is zero";
+            cout << year << " is a leap year." << endl;
         }
     }
     else
     {
-        cout << " The number is negative ";
+        cout << year << " is not a leap year." << endl;
     }
 
     return 0;

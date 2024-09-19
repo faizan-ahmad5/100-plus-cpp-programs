@@ -1,31 +1,30 @@
-// Write a C++ program that takes the age of a person as input and categorizes them into
-//  "Child"(age < 13), "Teenager"(13 <= age < 20), "Adult"(20 <= age < 60), and"Senior"(age >= 60).
+// Write a C++ program that takes an integer input from the user and prints
+// if the number is positive, negative, or zero using nested if statements.
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int userAge;
+    int userInput;
 
-    cout << "Enter your age :";
-    cin >> userAge;
+    cout << "Enter an integer number :";
+    cin >> userInput;
 
-    if (userAge < 13)
+    if (userInput >= 0)
     {
-        cout << "Child";
+        if (userInput > 0)
+        {
+            cout << "The numver is positive";
+        }
+        else
+        {
+            cout << "The number is zero";
+        }
     }
-    else if (userAge >= 13 && userAge < 20)
+    else
     {
-        cout << "Teenager";
-    }
-    else if (userAge >= 20 && userAge < 60)
-    {
-        cout << "Adult";
-    }
-    else if (userAge >= 60)
-    {
-        cout << "Senior";
+        cout << " The number is negative ";
     }
 
     return 0;

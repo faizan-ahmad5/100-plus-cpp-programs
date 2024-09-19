@@ -1,18 +1,19 @@
-// Write a C++ program to display 4 days of 2 weeks by using nested for loop
+// Write a C++ program that takes a character input from the user and checks if it is an uppercase letter.
+// If it is, print "The character is uppercase".
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    for (int i = 1; i <= 2; i++)
-    {
-        cout << "Week: " << i << endl;
+    char userInput;
 
-        for (int j = 1; j <= 4; j++)
-        {
-            cout << "Day: " << j << endl;
-        }
+    cout << "Enter a character :";
+    cin >> userInput;
+
+    if (userInput >= 'A' && userInput <= 'Z')
+    {
+        cout << "The character is uppercase" << endl;
     }
 
     return 0;
