@@ -1,23 +1,22 @@
-// Write a C++ program that prints the factorial of a given number using a for loop.
+// Write a C++ program that prints a 5x5 matrix filled with numbers from 1 to 25 using nested for loops.
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int number;
+    int num = 1;
 
-    cout << "Enter a number: ";
-    cin >> number;
-
-    int factorial = 1;
-
-    for (int i = number; i > 0; i--)
+    for (int i = 0; i < 5; i++)
     {
-        factorial = factorial * i;
-    }
+        for (int j = 0; j < 5; j++)
+        {
+            cout << num << "\t";
+            num++;
+        }
 
-    cout << "The factorial of " << number << " is " << factorial;
+        cout << endl;
+    }
 
     return 0;
 }

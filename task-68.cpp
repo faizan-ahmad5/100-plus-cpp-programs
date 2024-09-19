@@ -1,69 +1,24 @@
-// Write a C++ program that prints the transpose of a 3x3 matrix entered by the user using nested for loops
+// Factorial Calculation : Write a C++ program that calculates the factorial of a given number using a while loop.
 
-#include <iostream>
-using namespace std;
+#include <iostream>  // Includes the standard input-output stream library
+using namespace std; // Uses the standard namespace
 
-int main()
+int main() // Main function where the program execution begins
 {
+    int userInput;     // Declare a variable to store the user's input
+    int factorial = 1; // Initialize factorial to 1, which will hold the factorial result
 
-    // int matrix[3][3], transpose[3][3];
+    cout << "Enter a number :"; // Prompt the user to enter a number
+    cin >> userInput;           // Read the user's input and store it in userInput
 
-    // cout << "Enter the elements of the 3x3 matrix:" << endl;
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     for (int j = 0; j < 3; j++)
-    //     {
-    //         cin >> matrix[i][j];
-    //     }
-    // }
+    int faizanAhmad = userInput; // Copy the user's input to faizanAhmad for the calculation
 
-    // // Find the transpose
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     for (int j = 0; j < 3; j++)
-    //     {
-    //         transpose[i][j] = matrix[j][i];
-    //     }
-    // }
-
-    // cout << "Transpose of the matrix:" << endl;
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     for (int j = 0; j < 3; j++)
-    //     {
-    //         cout << transpose[i][j] << " ";
-    //     }
-    //     cout << endl;
-    // }
-
-    int matrix[3][3];
-
-    cout << "Enter the values for 3x3 matrix :";
-    for (int i = 0; i < 3; i++)
+    while (faizanAhmad > 0) // While loop to calculate the factorial
     {
-        for (int j = 0; j < 3; j++)
-        {
-            cin >> matrix[i][j];
-        }
+        factorial = factorial * faizanAhmad; // Multiply the current factorial value by faizanAhmad
+        faizanAhmad--;                       // Decrement faizanAhmad by 1
     }
 
-    int transpose[3][3];
-
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 3; j++)
-        {
-            transpose[j][i] = matrix[i][j];
-        }
-    }
-
-    cout << "Transponse is : " << endl;
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 3; j++)
-        {
-            cout << transpose[i][j] << "\t";
-        }
-        cout << endl;
-    }
+    cout << "The factorial of the given number is = " << factorial; // Output the factorial result
+    return 0;                                                       // Return 0 to indicate that the program ended successfully
 }

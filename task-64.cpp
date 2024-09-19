@@ -1,4 +1,4 @@
-// Write a C++ program that calculates and prints the sum of all odd numbers from 1 to 100 using a for loop.
+// Write a C++ program that prints a right-angled triangle pattern of stars with a height of 5 using nested for loops.
 
 #include <iostream>
 using namespace std;
@@ -6,17 +6,14 @@ using namespace std;
 int main()
 {
 
-    int sum = 0;
-
-    for (int i = 1; i <= 100; i++)
+    for (int i = 1; i <= 5; i++)
     {
-        if (i % 2 != 0)
+        for (int j = 1; j <= i; j++)
         {
-            sum = sum + i;
+            cout << "*";
         }
+        cout << endl;
     }
-
-    cout << "The sum of first 100 odd number is equal to = " << sum;
 
     return 0;
 }

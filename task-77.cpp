@@ -1,28 +1,29 @@
-// Early Termination : Write a C++ program that reads integers from the user in a while loop and terminates the loop
-// when the user enters a negative number.// Print the sum of all entered positive numbers before the user enters a negative number.
+// Number Guessing Game : Write a C++ program where the user has to guess a randomly generated number between 1 and 100.
+// Use a while loop to allow multiple attempts and use the break statement to exit the loop when the correct number is guessed.
 
-#include <iostream>  // Include the I/O library for input and output operations
-using namespace std; // Use the standard namespace to avoid typing 'std::' before I/O operations
+#include <iostream>  // Include the input-output stream library
+using namespace std; // Use the standard namespace
 
-int main() // Main function where the program execution begins
+int main() // Main function
 {
-    int faizanAhmad = 0; // Initialize a variable to store the sum of positive numbers
+    int faizanAhmad; // Variable to store user's guess
 
-    while (true) // Infinite loop, will run until 'break' is encountered
+    while (true) // Infinite loop to allow multiple attempts
     {
-        int userNum;                // Declare a variable to store the user input
-        cout << "Enter a number: "; // Prompt the user to enter a number
-        cin >> userNum;             // Read the number from user input
+        cout << "Guess a number between 1 and 100: "; // Prompt the user to guess a number
+        cin >> faizanAhmad;                           // Read user's guess
 
-        if (userNum < 0) // Check if the entered number is negative
+        if (faizanAhmad == 5) // Check if the guess is equal to 5 (for demonstration purposes)
         {
-            break; // Exit the loop if the number is negative
+            break; // Break the loop if the guess is correct
         }
-
-        faizanAhmad += userNum; // Add the positive number to the sum
+        else // If the guess is not correct
+        {
+            cout << "Again "; // Prompt the user to try again
+        }
     }
 
-    cout << "The sum of all the positive numbers is = " << faizanAhmad << endl; // Output the sum of positive numbers
+    cout << "Your guess is right"; // Output message when the correct guess is made
 
-    return 0; // Return 0 to indicate successful completion
+    return 0; // Return 0 to indicate successful execution
 }

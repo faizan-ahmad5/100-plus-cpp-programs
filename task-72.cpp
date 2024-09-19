@@ -1,28 +1,29 @@
-// Reverse Digits : Write a C++ program that reverses the digits of an integer using a while loop.
+// Prime Numbers Matrix : Write a C++ program using nested while loops to print a matrix of the first
+// 5 prime numbers in each row.
 
 #include <iostream>  // Includes the standard input-output stream library
 using namespace std; // Uses the standard namespace
 
 int main() // Main function where the program execution begins
 {
-    int userNum; // Declare a variable to store the user's input
+    // Array containing the first 5 prime numbers
+    int primeNums[5] = {2, 3, 5, 7, 11};
 
-    cout << "Enter a number :"; // Prompt the user to enter a number
-    cin >> userNum;             // Read the user's input and store it in userNum
+    // Variable to control the number of rows
+    int numberOfRows = 3; // You can change this to print more or fewer rows
 
-    string userNumInString = to_string(userNum); // Convert the integer to a string and store it in userNumInString
-
-    int i = userNumInString.length() - 1; // Initialize i to the index of the last character in the string
-
-    string reverse = ""; // Initialize an empty string to store the reversed digits
-
-    while (i >= 0) // While loop to iterate through the string from the end to the beginning
-    {
-        reverse = reverse + userNumInString[i]; // Append the current character to the reverse string
-        i--;                                    // Decrement the loop counter
+    int faizanAhmad = 0; // Initialize the outer loop counter
+    while (faizanAhmad < numberOfRows)
+    {              // Outer loop for each row
+        int j = 0; // Initialize the inner loop counter
+        while (j < 5)
+        {                                // Inner loop to print each prime number
+            cout << primeNums[j] << " "; // Print the j-th prime number followed by a space
+            j++;                         // Increment the inner loop counter
+        }
+        cout << endl;  // After printing all prime numbers in a row, move to the next line
+        faizanAhmad++; // Increment the outer loop counter
     }
 
-    cout << "The digits of integer in reverse order is = " << reverse; // Output the reversed string
-
-    return 0; // Return 0 to indicate that the program ended successfully
+    return 0;
 }

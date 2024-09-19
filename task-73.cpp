@@ -1,22 +1,28 @@
-// Multiplication Table : Write a C++ program using nested while loops to print the multiplication table from 1 to 10.
+// Pattern Printing : Write a C++ program using nested while loops to print the following pattern :
+// *
+// **
+// ***
+// ****
+// *****
 
-#include <iostream>  // Include the Input/Output stream library
+#include <iostream>  // Include the I/O library
 using namespace std; // Use the standard namespace
 
 int main() // Main function where the program execution begins
 {
-    int faizanAhmad = 1;      // Initialize the outer loop counter 'i' to 1
-    while (faizanAhmad <= 10) // Start of the outer loop that runs from 1 to 10
+    int faizanAhmad = 1;     // Initialize the outer loop counter
+    while (faizanAhmad <= 5) // Outer loop: run 5 times for 5 lines
     {
-        int j = 1;      // Initialize the inner loop counter 'j' to 1
-        while (j <= 10) // Start of the inner loop that runs from 1 to 10
+        int j = 1;               // Initialize the inner loop counter
+        while (j <= faizanAhmad) // Inner loop: run 'faizanAhmad' times
         {
-            cout << faizanAhmad << " X " << j << " = " << faizanAhmad * j << endl; // Print the multiplication of 'i' and 'j'
-            j++;                                                                   // Increment the inner loop counter
+            cout << "*"; // Print the asterisk
+            j++;         // Increment the inner loop counter
         }
 
+        cout << endl;  // Print a newline after each line of asterisks
         faizanAhmad++; // Increment the outer loop counter
     }
 
-    return 0; // Return statement of the main function
+    return 0; // Return 0 to indicate successful completion
 }

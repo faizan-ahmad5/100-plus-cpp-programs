@@ -1,36 +1,20 @@
-// Write a C++ program that prints a 5x5 matrix filled with numbers from 1 to 25 using nested for loops.
+// Basic Summation : Write a C++ program using a while loop to calculate the sum of the first 20 positive integers.
 
-#include <iostream>
-using namespace std;
+#include <iostream>  // Includes the standard input-output stream library
+using namespace std; // Uses the standard namespace
 
-int main()
+int main() // Main function where the program execution begins
 {
-    // int num = 1;
+    int sum = 0;         // Initialize sum to 0, which will hold the cumulative sum of integers
+    int faizanAhmad = 1; // Initialize faizanAhmad to 1, which will be used as a counter
 
-    // for (int i = 0; i < 5; i++)
-    // {
-    //     for (int j = 0; j < 5; j++)
-    //     {
-    //         cout << num << "\t";
-    //         num++;
-    //     }
-
-    //     cout << endl;
-    // }
-
-    int array[5][5] = {{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}, {11, 12, 13, 14, 15}, {16, 17, 18, 19, 20}, {21, 22, 23, 24, 25}};
-    int i = 0;
-    while (i < 5)
+    while (faizanAhmad <= 20) // While loop to iterate from 1 to 20 inclusive
     {
-        int j = 0;
-        while (j < 5)
-        {
-            cout << array[i][j] << " ";
-            j++;
-        }
-        cout << endl;
-        i++;
+        sum = sum + faizanAhmad; // Add the current value of faizanAhmad to sum
+        faizanAhmad++;           // Increment faizanAhmad by 1
     }
 
-    return 0;
+    cout << "The sum of first 20 positive integers is = " << sum; // Output the sum
+
+    return 0; // Return 0 to indicate that the program ended successfully
 }
