@@ -1,46 +1,33 @@
-// Take array of 10 numbers, now find smallest number in array and make it the greatest number in array and then print new array.
-#include <iostream>
-#include <limits>
+// Write a C++ program to generate the sum of left diagonal.
 
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    int arr[10];
-    int minIndex = 0, maxIndex = 0;
+    const int size = 3; // Define the size of the square matrix
+    int matrix[size][size];
+    int sum = 0;
 
-    // Take 10 numbers from the user
-    cout << "Enter 10 numbers:" << endl;
-    for (int i = 0; i < 10; i++)
+    // Take matrix input from the user
+    cout << "Enter the elements of the " << size << "x" << size << " matrix:" << endl;
+    for (int i = 0; i < size; i++)
     {
-        cout << "Number " << (i + 1) << ": ";
-        cin >> arr[i];
-    }
-
-    // Find the indices of the smallest and largest numbers
-    for (int i = 1; i < 10; i++)
-    {
-        if (arr[i] < arr[minIndex])
+        for (int j = 0; j < size; j++)
         {
-            minIndex = i;
-        }
-        if (arr[i] > arr[maxIndex])
-        {
-            maxIndex = i;
+            cout << "Element [" << i << "][" << j << "]: ";
+            cin >> matrix[i][j];
         }
     }
 
-    // Replace the smallest number with the largest number
-    int maxNumber = arr[maxIndex];
-    arr[minIndex] = maxNumber;
-
-    // Print the new array
-    cout << "Modified array:" << endl;
-    for (int i = 0; i < 10; i++)
+    // Calculate the sum of the left diagonal (primary diagonal)
+    for (int i = 0; i < size; i++)
     {
-        cout << arr[i] << " ";
+        sum += matrix[i][i];
     }
-    cout << endl;
+
+    // Print the result
+    cout << "Sum of the left diagonal elements: " << sum << endl;
 
     return 0;
 }

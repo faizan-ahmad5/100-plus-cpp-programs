@@ -1,55 +1,51 @@
-// Take 10 numbers from user, now display most occurring element and also its number of occurrence.
+// Write a C++ program to find the duplicate values in a 2d array.
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int arr[10];
-    int maxCount = 0;
-    int mostOccurringElement = arr[0];
-    bool multipleMax = false;
+    const int rows = 3;
+    const int cols = 3;
+    int array[rows][cols];
 
-    // Take 10 numbers from the user
-    cout << "Enter 10 numbers:" << endl;
-    for (int i = 0; i < 10; i++)
+    // Take input for the 2D array
+    cout << "Enter the elements of the " << rows << "x" << cols << " matrix:" << endl;
+    for (int i = 0; i < rows; i++)
     {
-        cout << "Number " << (i + 1) << ": ";
-        cin >> arr[i];
+        for (int j = 0; j < cols; j++)
+        {
+            cout << "Element [" << i << "][" << j << "]: ";
+            cin >> array[i][j];
+        }
     }
 
-    // Find the most occurring element
-    for (int i = 0; i < 10; i++)
+    bool foundDuplicate = false;
+
+    // Find and print duplicate values
+    cout << "Duplicate values in the array are:" << endl;
+    for (int i = 0; i < rows; i++)
     {
-        int count = 0;
-        for (int j = 0; j < 10; j++)
+        for (int j = 0; j < cols; j++)
         {
-            if (arr[i] == arr[j])
+            // Check for duplicates only if the element is not yet marked
+            for (int k = i; k < rows; k++)
             {
-                count++;
+                for (int l = (k == i ? j + 1 : 0); l < cols; l++)
+                {
+                    if (array[i][j] == array[k][l])
+                    {
+                        cout << array[i][j] << " found at positions [" << i << "][" << j << "] and [" << k << "][" << l << "]" << endl;
+                        foundDuplicate = true;
+                    }
+                }
             }
         }
-        if (count > maxCount)
-        {
-            maxCount = count;
-            mostOccurringElement = arr[i];
-            multipleMax = false;
-        }
-        else if (count == maxCount && arr[i] != mostOccurringElement)
-        {
-            multipleMax = true;
-        }
     }
 
-    if (multipleMax)
+    if (!foundDuplicate)
     {
-        cout << "Multiple elements have the maximum occurrence of " << maxCount << "." << endl;
-    }
-    else
-    {
-        // Print the most occurring element and its count
-        cout << "Most occurring element: " << mostOccurringElement << endl;
-        cout << "Number of occurrences: " << maxCount << endl;
+        cout << "No duplicate values found." << endl;
     }
 
     return 0;

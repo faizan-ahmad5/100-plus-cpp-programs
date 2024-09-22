@@ -1,33 +1,47 @@
-// Write a C++ program to generate the sum of left diagonal.
+// Write a C++ program to move all negative elements of an array of integers to the end of
+// the array without changing the order of positive element and negative element.
 
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 int main()
 {
-    const int size = 3; // Define the size of the square matrix
-    int matrix[size][size];
-    int sum = 0;
+    int n;
+    cout << "Enter the size of the array: ";
+    cin >> n;
 
-    // Take matrix input from the user
-    cout << "Enter the elements of the " << size << "x" << size << " matrix:" << endl;
-    for (int i = 0; i < size; i++)
+    int arr[n];
+
+    // Take the array elements as input
+    cout << "Enter the array elements:" << endl;
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < size; j++)
+        cin >> arr[i];
+    }
+
+    int j = 0;
+
+    // Traverse the array
+    for (int i = 0; i < n; i++)
+    {
+        // If the current element is positive
+        if (arr[i] > 0)
         {
-            cout << "Element [" << i << "][" << j << "]: ";
-            cin >> matrix[i][j];
+            // Swap the current element with the element at index j
+            swap(arr[i], arr[j]);
+            // Increment j
+            j++;
         }
     }
 
-    // Calculate the sum of the left diagonal (primary diagonal)
-    for (int i = 0; i < size; i++)
+    // Print the modified array
+    cout << "Modified array: ";
+    for (int i = 0; i < n; i++)
     {
-        sum += matrix[i][i];
+        cout << arr[i] << " ";
     }
-
-    // Print the result
-    cout << "Sum of the left diagonal elements: " << sum << endl;
+    cout << endl;
 
     return 0;
 }

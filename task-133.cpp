@@ -1,47 +1,55 @@
-// Write a C++ program to move all negative elements of an array of integers to the end of
-// the array without changing the order of positive element and negative element.
+// Write a C++ program to generate transpose of 3˟3 matrix
 
 #include <iostream>
-#include <algorithm>
 using namespace std;
 
 int main()
 {
-    int n;
-    cout << "Enter the size of the array: ";
-    cin >> n;
+    const int SIZE = 3;
+    int matrix[SIZE][SIZE];
+    int transpose[SIZE][SIZE];
 
-    int arr[n];
-
-    // Take the array elements as input
-    cout << "Enter the array elements:" << endl;
-    for (int i = 0; i < n; i++)
+    // Input the matrix
+    cout << "Enter the elements of the 3x3 matrix:" << endl;
+    for (int i = 0; i < SIZE; i++)
     {
-        cin >> arr[i];
-    }
-
-    int j = 0;
-
-    // Traverse the array
-    for (int i = 0; i < n; i++)
-    {
-        // If the current element is positive
-        if (arr[i] > 0)
+        for (int j = 0; j < SIZE; j++)
         {
-            // Swap the current element with the element at index j
-            swap(arr[i], arr[j]);
-            // Increment j
-            j++;
+            cout << "Element [" << i << "][" << j << "]: ";
+            cin >> matrix[i][j];
         }
     }
 
-    // Print the modified array
-    cout << "Modified array: ";
-    for (int i = 0; i < n; i++)
+    // Compute the transpose
+    for (int i = 0; i < SIZE; i++)
     {
-        cout << arr[i] << " ";
+        for (int j = 0; j < SIZE; j++)
+        {
+            transpose[j][i] = matrix[i][j];
+        }
     }
-    cout << endl;
+
+    // Display the original matrix
+    cout << "Original matrix:" << endl;
+    for (int i = 0; i < SIZE; i++)
+    {
+        for (int j = 0; j < SIZE; j++)
+        {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    // Display the transposed matrix
+    cout << "Transposed matrix:" << endl;
+    for (int i = 0; i < SIZE; i++)
+    {
+        for (int j = 0; j < SIZE; j++)
+        {
+            cout << transpose[i][j] << " ";
+        }
+        cout << endl;
+    }
 
     return 0;
 }

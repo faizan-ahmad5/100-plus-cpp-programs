@@ -1,52 +1,59 @@
-// Write a C++ program to find the duplicate values in a 2d array.
+// Write a C++ Program to store temperature of two different cities for a week and display it.
+// Find the city  with hottest temperature.
 
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 int main()
 {
-    const int rows = 3;
-    const int cols = 3;
-    int array[rows][cols];
+    const int NUM_CITIES = 2;
+    const int NUM_DAYS = 7;
 
-    // Take input for the 2D array
-    cout << "Enter the elements of the " << rows << "x" << cols << " matrix:" << endl;
-    for (int i = 0; i < rows; i++)
+    string cities[NUM_CITIES] = {"City A", "City B"};
+    double temperature[NUM_CITIES][NUM_DAYS];
+
+    // Take the temperature as input
+    for (int i = 0; i < NUM_CITIES; i++)
     {
-        for (int j = 0; j < cols; j++)
+        cout << "Enter the temperature for " << cities[i] << " for 7 days:" << endl;
+        for (int j = 0; j < NUM_DAYS; j++)
         {
-            cout << "Element [" << i << "][" << j << "]: ";
-            cin >> array[i][j];
+            cout << "Day " << j + 1 << ": ";
+            cin >> temperature[i][j];
         }
     }
 
-    bool foundDuplicate = false;
-
-    // Find and print duplicate values
-    cout << "Duplicate values in the array are:" << endl;
-    for (int i = 0; i < rows; i++)
+    // Display the temperature
+    cout << "Temperature for each city for 7 days:" << endl;
+    for (int i = 0; i < NUM_CITIES; i++)
     {
-        for (int j = 0; j < cols; j++)
+        cout << cities[i] << ": ";
+        for (int j = 0; j < NUM_DAYS; j++)
         {
-            // Check for duplicates only if the element is not yet marked
-            for (int k = i; k < rows; k++)
+            cout << temperature[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    // Find the city with the hottest temperature
+    int hottestCity = 0;
+    double hottestTemp = temperature[0][0];
+    for (int i = 0; i < NUM_CITIES; i++)
+    {
+        for (int j = 0; j < NUM_DAYS; j++)
+        {
+            if (temperature[i][j] > hottestTemp)
             {
-                for (int l = (k == i ? j + 1 : 0); l < cols; l++)
-                {
-                    if (array[i][j] == array[k][l])
-                    {
-                        cout << array[i][j] << " found at positions [" << i << "][" << j << "] and [" << k << "][" << l << "]" << endl;
-                        foundDuplicate = true;
-                    }
-                }
+                hottestTemp = temperature[i][j];
+                hottestCity = i;
             }
         }
     }
 
-    if (!foundDuplicate)
-    {
-        cout << "No duplicate values found." << endl;
-    }
+    cout << "The city with the hottest temperature is " << cities[hottestCity]
+         << " with a temperature of " << hottestTemp << endl;
 
     return 0;
 }

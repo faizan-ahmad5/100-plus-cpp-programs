@@ -1,41 +1,55 @@
+// Take 10 numbers from user, now display most occurring element and also its number of occurrence.
+
 #include <iostream>
-#include <limits>
 using namespace std;
 
 int main()
 {
-    float userInput[10];
+    int arr[10];
+    int maxCount = 0;
+    int mostOccurringElement = arr[0];
+    bool multipleMax = false;
 
-    cout << "Enter 10 float numbers:" << endl;
+    // Take 10 numbers from the user
+    cout << "Enter 10 numbers:" << endl;
     for (int i = 0; i < 10; i++)
     {
-        cout << "Enter number " << (i + 1) << ": ";
-        cin >> userInput[i];
+        cout << "Number " << (i + 1) << ": ";
+        cin >> arr[i];
     }
 
-    float greatest = numeric_limits<float>::lowest();
-    float secondGreatest = numeric_limits<float>::lowest();
-
+    // Find the most occurring element
     for (int i = 0; i < 10; i++)
     {
-        if (userInput[i] > greatest)
+        int count = 0;
+        for (int j = 0; j < 10; j++)
         {
-            secondGreatest = greatest;
-            greatest = userInput[i];
+            if (arr[i] == arr[j])
+            {
+                count++;
+            }
         }
-        else if (userInput[i] > secondGreatest && userInput[i] < greatest)
+        if (count > maxCount)
         {
-            secondGreatest = userInput[i];
+            maxCount = count;
+            mostOccurringElement = arr[i];
+            multipleMax = false;
+        }
+        else if (count == maxCount && arr[i] != mostOccurringElement)
+        {
+            multipleMax = true;
         }
     }
 
-    if (secondGreatest == numeric_limits<float>::lowest())
+    if (multipleMax)
     {
-        cout << "There is no distinct second greatest number in the array." << endl;
+        cout << "Multiple elements have the maximum occurrence of " << maxCount << "." << endl;
     }
     else
     {
-        cout << "The second greatest number is: " << secondGreatest << endl;
+        // Print the most occurring element and its count
+        cout << "Most occurring element: " << mostOccurringElement << endl;
+        cout << "Number of occurrences: " << maxCount << endl;
     }
 
     return 0;
