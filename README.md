@@ -380,6 +380,73 @@ Write a C++ program to check whether a character is an alphabet or not.
 ### 100. **Check Valid Triangle**
 Write a C++ program to input the angles of a triangle and check whether the triangle is valid or not.
 
+### 101. **Check Vowel or Consonant**
+Write a C++ program to check whether a character is a vowel or a consonant.
+
+### 102. **Menu-Driven Simple Calculator**
+Write a menu-driven C++ program for a simple calculator using if-else.
+
+### 103. **Find Maximum of Three Numbers**
+Write a program to input three numbers and find the maximum between all.
+
+### 104. **Check Number Less Than, Greater Than, or Equal to 10**
+Write a C++ program that tells the user if the number entered is less than, greater than, or equal to 10.
+
+### 105. **Check Even or Odd Number**
+Write a C++ program that tells the user if the number entered is even or odd.
+
+### 106. **Menu-Driven Temperature Conversion**
+Write a menu-driven C++ program that asks the user to choose the type of output they want:  
+- Convert the entered Celsius temperature into Fahrenheit or Kelvin.
+
+### 107. **Grading System Based on Percentage**
+According to your grading system, mark the user-entered percentage as Grade A, B, C, D, or F:  
+- Percentage >= 90: A grade  
+- Percentage >= 80: B grade  
+- Percentage >= 70: C grade  
+- Percentage >= 60: D grade  
+- Percentage >= 40: E grade  
+- Percentage < 40: F grade  
+
+### 108. **Print Numbers up to Upper Bound**
+Write a C++ program to input an upper bound from the user and print all numbers up to that limit.
+
+### 109. **Separate Even and Odd Numbers up to Upper Bound**
+Write a C++ program to input an upper bound and separate even and odd numbers up to that limit.
+
+### 110. **Print Alphabets (a-z)**
+Write a C++ program that prints the complete alphabet using a for loop (a-z).
+
+### 111. **Print Multiplication Table**
+Write a C++ program that asks the user for a number and prints the table of that number up to 10.
+
+### 112. **Product of Odd Numbers from 1 to 10**
+Write a C++ program that displays the product of all odd numbers from 1 to 10 using a for loop.
+
+### 113. **Sum of Squares from 1 to n**
+Write a C++ program that finds the sum of squares of integers from 1 to n, where n is a positive value entered by the user (i.e., 1² + 2² + 3² + ... + n²).
+
+### 114. **Count Digits in a Number**
+Write a C++ program that counts the number of digits in the number entered by the user.
+
+### 115. **Reverse a Number**
+Write a C++ program to reverse a number entered by the user using a loop.
+
+### 116. **Find First and Last Digit of a Number**
+Write a C++ program to find the first and last digit of a number.
+
+### 117. **Product of Digits of a Number**
+Write a C++ program to calculate the product of digits of a number.
+
+### 118. **Frequency of Each Digit in an Integer**
+Write a C++ program to find the frequency of each digit in a given integer.
+
+### 119. **Check Armstrong Number**
+Write a C++ program to check whether a number is an Armstrong number or not.
+
+### 120. **Convert Binary to Decimal**
+Write a C++ program to convert a binary number to the decimal number system.
+
 ## 📋 Topics Covered
 
 ### 1. **Basics of C++**
