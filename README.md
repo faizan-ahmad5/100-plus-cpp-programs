@@ -335,6 +335,50 @@ Write a C++ program to sort an array of 10 integers in ascending order.
 ### 90. **Remove Element from Array**
 Write a C++ program to remove a specific element from an array of 10 integers. The program should shift the remaining elements to fill the gap and reduce the size of the array by one.
 
+### 91. **Find and Print Duplicate Elements in an Array**
+Write a C++ program to find and print duplicate elements in an array of 10 integers.
+
+### 92. **Second Largest Element in an Array**
+Write a C++ program to find the second largest element in an array of 10 integers.
+
+### 93. **Check Number Less Than or Greater Than 10**
+Write a C++ program that tells the user if the number entered is less than or greater than 10.
+
+### 94. **Check Even or Odd Number**
+Write a C++ program that tells the user if the number entered is even or odd.
+
+### 95. **Menu-Driven Temperature Conversion**
+Write a menu-driven C++ program that asks the user to choose the type of output they want:  
+- Convert the entered Celsius temperature into Fahrenheit or Kelvin.
+
+### 96. **Compare Strings**
+Write a program to compare the following strings with each other and display which string is smaller:
+
+string str1 = "Hello";
+string str2 = "Hi";
+string str3 = "Air";
+string str4 = "Bill";
+string str5 = "Big";
+
+### 97. **Grading System**
+Write a C++ program to mark the user-entered numbers according to your grading system (Grade A, B, C, D, F). Implement all conditions and display results.
+
+### 98. **Variable Declarations and Output**
+Declare and initialize the following variables and write a program to display them:
+```cpp
+bool found = true;
+bool flag = false;
+int num = 1;
+double x = 3.4;
+int a = 5, b = 8;
+char ch = 'Z';
+```
+
+### 99. **Check if Character is Alphabet**
+Write a C++ program to check whether a character is an alphabet or not.
+
+### 100. **Check Valid Triangle**
+Write a C++ program to input the angles of a triangle and check whether the triangle is valid or not.
 
 ## 📋 Topics Covered
 
