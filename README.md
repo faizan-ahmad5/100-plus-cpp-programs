@@ -490,33 +490,39 @@ Write a C++ program to generate the transpose of a 3x3 matrix.
 Write a C++ program that initializes an array with the names of 30 students. The program should iterate through the array and print each student's name along with their corresponding roll number (starting from 1).  
 The output should be in the format: "Student name is [Name], roll no is [Roll Number]."
 
-## 📋 Topics Covered
 
-### 1. **Basics of C++**
-   - Introduction to C++ and syntax
-   - Input/output operations
-   - Data types and variables
-   - Operators (arithmetic, relational, logical)
-   - Conditional statements (`if`, `else if`, `else`)
-   - Loops (`for`, `while`, `do-while`)
+## 📋Topics Covered in the Exercises
 
-### 2. **Functions and Scope**
-   - Defining and calling functions
-   - Function arguments and return values
-   - Variable scope (local and global)
+### Fundamentals of C++:
+- **Basic syntax and structure**
+- **Variables, data types, and operators**
+- **Input/output operations** (using `cin` and `cout`)
+- **Control flow statements** (if-else, switch-case, for loops, while loops)
+- **Functions**
 
-### 3. **Arrays and Strings**
-   - Single-dimensional arrays
-   - Multidimensional arrays
-   - String manipulation
-   - Character arrays and string functions
+### Specific Concepts:
+- **Escape sequences** (`\n`, `\t`, `\"`)
+- **Comments**
+- **Arithmetic operations**
+- **Conditional statements**
+- **Loops**
+- **Arrays**
+- **Functions**
+- **Strings**
+- **Matrices**
+- **Pattern printing**
 
-### 4. **Pointers**
-   - Introduction to pointers
-   - Pointer arithmetic
-   - Pointers and arrays
-   - Passing pointers to functions
-   - Dynamic memory allocation with `new` and `delete`
+### Applications:
+- **Simple calculations** (area, circumference, temperature conversion, etc.)
+- **Data manipulation and analysis** (arrays, matrices)
+- **Pattern generation**
+- **Problem-solving** (e.g., number guessing game, menu-driven programs)
+
+### Additional Notes:
+- The exercises progressively increase in difficulty, starting with basic concepts and moving towards more complex problems.
+- Some exercises involve multiple topics or require specific techniques (e.g., nested loops, arrays, functions).
+- The exercises are designed to reinforce your understanding of C++ programming and provide practical experience in solving various problems.
+
 
 ## 🚀 How to Use
 
