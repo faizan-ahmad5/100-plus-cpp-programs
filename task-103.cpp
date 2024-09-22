@@ -1,25 +1,32 @@
-// Write a C++ program to check whether a character is vowel or consonant.
+// Write a program to input three numbers and find maximum between all.
 
 #include <iostream>
-#include <cctype> // for tolower function
 using namespace std;
 
 int main()
 {
-    char userInput;
+    int userNum1, userNum2, userNum3;
 
-    cout << "Enter an alphabet/character :";
-    cin >> userInput;
+    cout << "Enter the first number: ";
+    cin >> userNum1;
 
-    userInput = tolower(userInput);
+    cout << "Enter the second number: ";
+    cin >> userNum2;
 
-    if (userInput == 'a' || userInput == 'e' || userInput == 'i' || userInput == 'o' || userInput == 'u')
+    cout << "Enter the third number: ";
+    cin >> userNum3;
+
+    if (userNum1 > userNum2 && userNum1 > userNum3)
     {
-        cout << "The given charcter is vowel";
+        cout << "The number " << userNum1 << " is maximum.";
+    }
+    else if (userNum2 > userNum1 && userNum2 > userNum3)
+    {
+        cout << "The number " << userNum2 << " is maximum.";
     }
     else
     {
-        cout << "The given character is consonant";
+        cout << "The number " << userNum3 << " is maximum.";
     }
 
     return 0;

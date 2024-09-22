@@ -1,19 +1,25 @@
-// Write a C++ program to reverse a number entered by user using loop.
+// Write a program to calculate product of digits of a number.
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int userInput;
+    int userNum;
 
-    cout << "Enter a number :";
-    cin >> userInput;
+    cout << "Enter a number: ";
+    cin >> userNum;
 
-    for (int i = userInput; i >= 0; i--)
+    string intToString = to_string(userNum);
+
+    int product = 1;
+
+    for (int i = 0; i < intToString.length(); i++)
     {
-        cout << i << " ";
+        product = product * (intToString[i] - '0');
     }
+
+    cout << "The product of digits of the number is = " << product << endl;
 
     return 0;
 }

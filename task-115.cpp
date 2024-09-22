@@ -1,22 +1,19 @@
-// Write a C++ program that finds the sum of squares of integer from 1 to n.
-// Where n is a positive value entered by user(i.e.1 ^ 2 + 2 ^ 2 + 3 ^ 2………. + n ^ 2).
+// Write a C++ program to reverse a number entered by user using loop.
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int n;
-    cout << "Enter nth value: ";
-    cin >> n;
+    int userInput;
 
-    int sum = 0;
+    cout << "Enter a number :";
+    cin >> userInput;
 
-    for (int i = 1; i <= n; i++)
+    for (int i = userInput; i >= 0; i--)
     {
-        sum = sum + (i * i);
+        cout << i << " ";
     }
 
-    cout << "The sum of squares from 1 to " << n << " is: " << sum << endl;
     return 0;
 }

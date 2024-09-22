@@ -1,40 +1,26 @@
-// Write a menu driven C++ program for simple calculator using if-else.
+// Write a C++ program that tells the user that the number entered is less than, greater than or equal to 10 ?
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int userNum1, userNum2;
-    cout << "Enter first Number :" << endl;
-    cin >> userNum1;
+    int userNum;
 
-    cout << "Enter second Number :";
-    cin >> userNum2;
+    cout << "Enter a number: ";
+    cin >> userNum;
 
-    char oper;
-    cout << "Choose an operator ( + , - , * , /)";
-    cin >> oper;
-
-    if (oper == '+')
+    if (userNum > 10)
     {
-        cout << "The sum of two number is = " << userNum1 + userNum2;
+        cout << "The given number " << userNum << " is greater than 10." << endl;
     }
-    else if (oper == '-')
+    else if (userNum < 10)
     {
-        cout << "The subtraction of two numbers is = " << userNum1 - userNum2;
-    }
-    else if (oper == '*')
-    {
-        cout << "The multiplication of two numbers is = " << userNum1 * userNum2;
-    }
-    else if (oper == '/')
-    {
-        cout << "The division of two numbers is = " << userNum1 / userNum2;
+        cout << "The given number " << userNum << " is less than 10." << endl;
     }
     else
     {
-        cout << "Error! Please choose from the given operators";
+        cout << "The given number " << userNum << " is equal to 10." << endl;
     }
 
     return 0;

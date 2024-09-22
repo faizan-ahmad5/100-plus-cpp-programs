@@ -1,32 +1,22 @@
-// Write a program to input three numbers and find maximum between all.
+// Write a C++ program that tells the user that the number entered is even or odd ?
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int userNum1, userNum2, userNum3;
+    int userNum;
 
-    cout << "Enter the first number: ";
-    cin >> userNum1;
+    cout << "Enter a number: ";
+    cin >> userNum;
 
-    cout << "Enter the second number: ";
-    cin >> userNum2;
-
-    cout << "Enter the third number: ";
-    cin >> userNum3;
-
-    if (userNum1 > userNum2 && userNum1 > userNum3)
+    if (userNum % 2 == 0)
     {
-        cout << "The number " << userNum1 << " is maximum.";
-    }
-    else if (userNum2 > userNum1 && userNum2 > userNum3)
-    {
-        cout << "The number " << userNum2 << " is maximum.";
+        cout << "The given number " << userNum << " is even." << endl;
     }
     else
     {
-        cout << "The number " << userNum3 << " is maximum.";
+        cout << "The given number " << userNum << " is odd." << endl;
     }
 
     return 0;

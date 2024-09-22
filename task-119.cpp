@@ -1,4 +1,4 @@
-// Write a program to calculate product of digits of a number.
+// Write a program to check whether a number is Armstrong number or not .
 
 #include <iostream>
 using namespace std;
@@ -11,15 +11,32 @@ int main()
     cin >> userNum;
 
     string intToString = to_string(userNum);
+    int totalNumberOfDigits = intToString.length();
 
-    int product = 1;
+    int sum = 0;
 
-    for (int i = 0; i < intToString.length(); i++)
+    for (int i = 0; i < totalNumberOfDigits; i++)
     {
-        product = product * (intToString[i] - '0');
+        int singleDigit = intToString[i] - '0';
+
+        int power = 1; // Reset power for each digit
+
+        for (int j = 0; j < totalNumberOfDigits; j++)
+        {
+            power *= singleDigit;
+        }
+
+        sum += power;
     }
 
-    cout << "The product of digits of the number is = " << product << endl;
+    if (sum == userNum)
+    {
+        cout << "It's an Armstrong number." << endl;
+    }
+    else
+    {
+        cout << "It's not an Armstrong number." << endl;
+    }
 
     return 0;
 }

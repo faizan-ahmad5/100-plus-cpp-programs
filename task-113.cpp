@@ -1,24 +1,22 @@
-// Write a C++ program that ask the user a number and prints the table of that number up to 10 ?
+// Write a C++ program that finds the sum of squares of integer from 1 to n.
+// Where n is a positive value entered by user(i.e.1 ^ 2 + 2 ^ 2 + 3 ^ 2………. + n ^ 2).
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
+    int n;
+    cout << "Enter nth value: ";
+    cin >> n;
 
-    int userInput;
+    int sum = 0;
 
-    cout << "Enter a number :";
-    cin >> userInput;
-
-    int table;
-
-    for (int i = 1; i <= 10; i++)
+    for (int i = 1; i <= n; i++)
     {
-        table = userInput * i;
-
-        cout << userInput << " X " << i << " = " << table << endl;
+        sum = sum + (i * i);
     }
 
+    cout << "The sum of squares from 1 to " << n << " is: " << sum << endl;
     return 0;
 }

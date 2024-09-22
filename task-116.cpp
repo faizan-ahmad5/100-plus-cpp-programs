@@ -1,7 +1,6 @@
-// Write a C++ program counts the number of digits in the number entered by user ?
+// Write a program to find first and last digit of a number
 
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main()
@@ -13,9 +12,11 @@ int main()
 
     string intToString = to_string(userInput);
 
-    int count = intToString.length();
+    char firstDigit = intToString[0];
+    char lastDigit = intToString[intToString.length() - 1];
 
-    cout << "The number of digits in the entered number is: " << count << endl;
+    cout << "First digit: " << firstDigit << endl;
+    cout << "Last digit: " << lastDigit << endl;
 
     return 0;
 }

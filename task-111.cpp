@@ -1,4 +1,4 @@
-// Write a C++ program to input an upper bound and separate even & odd from that limit ?
+// Write a C++ program that ask the user a number and prints the table of that number up to 10 ?
 
 #include <iostream>
 using namespace std;
@@ -11,16 +11,13 @@ int main()
     cout << "Enter a number :";
     cin >> userInput;
 
-    for (int i = 0; i <= userInput; i++)
+    int table;
+
+    for (int i = 1; i <= 10; i++)
     {
-        if (i % 2 == 0)
-        {
-            cout << "The " << i << " is even " << endl;
-        }
-        else
-        {
-            cout << "The " << i << " is odd " << endl;
-        }
+        table = userInput * i;
+
+        cout << userInput << " X " << i << " = " << table << endl;
     }
 
     return 0;

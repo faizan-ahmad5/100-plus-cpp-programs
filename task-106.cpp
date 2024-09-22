@@ -1,26 +1,41 @@
-// Write a C++ program that tells the user that the number entered is less than, greater than or equal to 10 ?
+// Write a menu driven C++ program that ask the user to choose the type in which he wants the output ?
+// Either he wants to convert the entered Celsius temperature in to Fahrenheit or Kelvin ?
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int userNum;
+    cout << "Choose the type in which you want the output? " << endl;
+    cout << "1. Celsius to Fahrenheit" << endl;
+    cout << "2. Celsius to Kelvin" << endl;
 
+    int userChoice;
     cout << "Enter a number: ";
-    cin >> userNum;
+    cin >> userChoice;
 
-    if (userNum > 10)
+    double celsius;
+    double result;
+
+    if (userChoice == 1)
     {
-        cout << "The given number " << userNum << " is greater than 10." << endl;
+        cout << "Enter temperature in Celsius to convert to Fahrenheit: ";
+        cin >> celsius;
+        result = (celsius * 9 / 5) + 32;
+        cout << "The temperature in Fahrenheit is: " << result << "C" << endl;
     }
-    else if (userNum < 10)
+
+    else if (userChoice == 2)
     {
-        cout << "The given number " << userNum << " is less than 10." << endl;
+        cout << "Enter temperature in Celsius to convert to Kelvin: ";
+        cin >> celsius;
+        result = celsius + 273.15;
+        cout << "The temperature in Kelvin is: " << result << "K" << endl;
     }
+
     else
     {
-        cout << "The given number " << userNum << " is equal to 10." << endl;
+        cout << "Invalid choice." << endl;
     }
 
     return 0;

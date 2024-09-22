@@ -1,21 +1,21 @@
-// Write a C++ program that displays the product of all odd numbers from 1 to 10 using for loop?
+// Write a C++ program counts the number of digits in the number entered by user ?
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
 {
-    int product = 1;
+    int userInput;
 
-    for (int i = 1; i <= 10; i++)
-    {
-        if (i % 2 != 0)
-        {
-            product *= i;
-        }
-    }
+    cout << "Enter a number: ";
+    cin >> userInput;
 
-    cout << "Product of all odd numbers from 1 to 10 is: " << product << endl;
+    string intToString = to_string(userInput);
+
+    int count = intToString.length();
+
+    cout << "The number of digits in the entered number is: " << count << endl;
 
     return 0;
 }
