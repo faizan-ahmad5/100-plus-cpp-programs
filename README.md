@@ -184,77 +184,77 @@ Welcome to the **100-plus-cpp-programs** repository! This collection contains ov
 50. **Reverse Whole Numbers**:  
     Write a C++ program to print whole numbers in reverse from `n` to `0` using a while loop.
 
-51. **Display Days of Two Weeks (Nested For Loop)**  
+### 51. **Display Days of Two Weeks (Nested For Loop)**  
 Write a C++ program to display the days of two weeks using a nested for loop. The outer loop should represent the weeks (2 weeks), and the inner loop should represent the days (4 days per week).
 
-52. **Check Even Number**  
+### 52. **Check Even Number**  
 Write a C++ program that takes an integer input from the user and checks if the number is even. If it is even, print `"The number is even"`.
 
-53. **Check Uppercase Character**  
+### 53. **Check Uppercase Character**  
 Write a C++ program that takes a character input from the user and checks if it is an uppercase letter. If it is, print `"The character is uppercase"`.
 
-54. **Check Divisibility by 5**  
+### 54. **Check Divisibility by 5**  
 Write a C++ program that takes an integer input from the user and checks if the number is divisible by 5. If it is divisible, print `"The number is divisible by 5"`.
 
-55. **Check Vowel or Consonant**  
+### 55. **Check Vowel or Consonant**  
 Write a C++ program that takes a character input from the user and checks if it is a vowel or consonant. Print `"Vowel"` if it is a vowel; otherwise, print `"Consonant"`.
 
-56. **Categorize Age**  
+### 56. **Categorize Age**  
 Write a C++ program that takes the age of a person as input and categorizes them into the following categories:  
 - **Child** (age < 13)  
 - **Teenager** (13 <= age < 20)  
 - **Adult** (20 <= age < 60)  
 - **Senior** (age >= 60)
 
-57. **Find Largest, Second Largest, and Smallest**  
+### 57. **Find Largest, Second Largest, and Smallest**  
 Write a C++ program that takes three float numbers as input and prints which number is the largest, the second largest, and the smallest.
 
-58. **Check Positive, Negative, or Zero (Nested If Statements)**  
+### 58. **Check Positive, Negative, or Zero (Nested If Statements)**  
 Write a C++ program that takes an integer input from the user and prints whether the number is positive, negative, or zero using nested if statements.
 
-59. **Pass or Fail**  
+### 59. **Pass or Fail**  
 Write a C++ program that takes the scores of three subjects from the user and determines if the student has passed. A student passes if all three scores are greater than or equal to 50.
 
-60. **Leap Year Check (Nested If Statements)**  
+### 60. **Leap Year Check (Nested If Statements)**  
 Write a C++ program that takes a year as input from the user and checks if it is a leap year using nested if statements.
 
-61. **Print First 10 Natural Numbers**  
+### 61. **Print First 10 Natural Numbers**  
 Write a C++ program that prints the first 10 natural numbers using a for loop.
 
-62. **Sum of Odd Numbers from 1 to 100**  
+### 62. **Sum of Odd Numbers from 1 to 100**  
 Write a C++ program that calculates and prints the sum of all odd numbers from 1 to 100 using a for loop.
 
-63. **Factorial Using For Loop**  
+### 63. **Factorial Using For Loop**  
 Write a C++ program that prints the factorial of a given number using a for loop.
 
-64. **Right-Angled Triangle Pattern**  
+### 64. **Right-Angled Triangle Pattern**  
 Write a C++ program that prints a right-angled triangle pattern of stars with a height of 5 using nested for loops.
 
-65. **5x5 Matrix of Numbers**  
+### 65. **5x5 Matrix of Numbers**  
 Write a C++ program that prints a 5x5 matrix filled with numbers from 1 to 25 using nested for loops.
 
-66. **Transpose of a 3x3 Matrix**  
+### 66. **Transpose of a 3x3 Matrix**  
 Write a C++ program that prints the transpose of a 3x3 matrix entered by the user using nested for loops.
 
-67. **Basic Summation**  
+### 67. **Basic Summation**  
 Write a C++ program using a while loop to calculate the sum of the first 20 positive integers.
 
-68. **Factorial Calculation Using While Loop**  
+### 68. **Factorial Calculation Using While Loop**  
 Write a C++ program that calculates the factorial of a given number using a while loop.
 
-69. **Digit Count**  
+### 69. **Digit Count**  
 Write a C++ program using a while loop to count the number of digits in a given integer.
 
-70. **Reverse Digits**  
+### 70. **Reverse Digits**  
 Write a C++ program that reverses the digits of an integer using a while loop.
 
-71. **Multiplication Table (1 to 10)**  
+### 71. **Multiplication Table (1 to 10)**  
 Write a C++ program using nested while loops to print the multiplication table from 1 to 10.
 
-72. **Prime Numbers Matrix**  
+### 72. **Prime Numbers Matrix**  
 Write a C++ program using nested while loops to print a matrix of the first 5 prime numbers in each row.
 
-73. **Pattern Printing**  
+### 73. **Pattern Printing**  
 Write a C++ program using nested while loops to print the following pattern:  
  ```
  *
@@ -264,34 +264,76 @@ Write a C++ program using nested while loops to print the following pattern:
  *****
  ```
 
-74. **Sum of Matrix Elements**  
+### 74. **Sum of Matrix Elements**  
 Write a C++ program using nested while loops to calculate the sum of all elements in a 3x3 matrix.
 
-75. **Early Termination**  
+### 75. **Early Termination**
 Write a C++ program that reads integers from the user in a while loop and terminates the loop when the user enters a negative number. Print the sum of all entered positive numbers before the user enters a negative number.
 
-76. **Simple Menu with Break**  
+### 76. **Simple Menu with Break**
 Write a C++ program that displays a menu to the user in a while loop. Allow the user to choose options and use the break statement to exit the menu when they select the option to quit.
 
-77. **Number Guessing Game**  
+### 77. **Number Guessing Game**
 Write a C++ program where the user has to guess a randomly generated number between 1 and 100. Use a while loop to allow multiple attempts and use the break statement to exit the loop when the correct number is guessed.
 
-78. **Sum Until Zero**  
+### 78. **Sum Until Zero**
 Write a C++ program that continually asks the user to enter numbers and adds them together. Use a break statement to exit the loop and print the total sum when the user enters zero.
 
-79. **Matrix Search**  
+### 79. **Matrix Search**
 Write a C++ program using nested while loops to search for a specific value in a 4x4 matrix. Use a break statement to exit the inner loop when the value is found, and print the position of the value.
 
-80. **Pattern with Condition**  
+### 80. **Pattern with Condition**
 Write a C++ program using nested while loops to print the following pattern, but break the inner loop when the number exceeds 5:  
- ```
- 1  
- 1 2  
- 1 2 3  
- 1 2 3 4  
- 1 2 3 4 5  
- ```
+```
+1  
+1 2  
+1 2 3  
+1 2 3 4  
+1 2 3 4 5  
+```
 
+### 81. **Sum of Diagonal Elements**
+Write a C++ program using nested while loops to calculate the sum of the diagonal elements of a 5x5 matrix. Use a break statement to exit the inner loop once the diagonal element is processed.
+
+### 82. **Character Grid**
+Write a C++ program using nested while loops to print a grid of characters. Use a break statement in the inner loop to stop printing characters in a row after printing 'z':  
+```
+a b c ... z  
+a b c ... z  
+a b c ... z  
+```
+
+### 83. **Number Pattern**
+Write a C++ program using nested while loops to print the following pattern:  
+```
+1  
+2 1  
+3 2 1  
+4 3 2 1  
+5 4 3 2 1  
+6 5 4 3 2 1  
+```
+
+### 84. **Basic Arithmetic Operations**
+Write a C++ program that performs basic arithmetic operations (addition, subtraction, multiplication, and division) on two user-provided numbers. The program should repeatedly prompt the user to select an operation and input two numbers, then display the result. The program should also handle invalid inputs gracefully and allow the user to perform multiple operations until they choose to exit.
+
+### 85. **Array Initialization and Printing**
+Write a C++ program to declare an array of 10 integers, initialize it with values from 1 to 10, and print all the elements of the array.
+
+### 86. **Maximum Element in Array**
+Write a C++ program that reads 5 integers from the user into an array and finds the maximum element in the array.
+
+### 87. **Sum of Array Elements**
+Write a C++ program that reads 10 integers from the user into an array and calculates the sum of all the elements in the array.
+
+### 88. **Reverse Array**
+Write a C++ program to reverse the elements of an array of 10 integers. Display the original and the reversed array.
+
+### 89. **Sort Array in Ascending Order**
+Write a C++ program to sort an array of 10 integers in ascending order.
+
+### 90. **Remove Element from Array**
+Write a C++ program to remove a specific element from an array of 10 integers. The program should shift the remaining elements to fill the gap and reduce the size of the array by one.
 
 
 ## 📋 Topics Covered
