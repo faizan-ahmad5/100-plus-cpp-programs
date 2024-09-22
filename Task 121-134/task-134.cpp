@@ -1,3 +1,6 @@
+// Write a C++ program that initializes an array with the names of 30 students.The program should then iterate through the array and print each student's name along with their corresponding roll number (starting from 1).
+// The output should be in the format: "Student name is [Name], roll no is [Roll Number]
+
 #include <iostream>
 #include <string>
 using namespace std;
