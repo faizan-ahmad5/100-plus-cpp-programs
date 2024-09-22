@@ -1,35 +1,32 @@
-// Write a C++ program that reads 5 integers from the user into an array and finds the maximum element in the array.
+// Write a C++ program to reverse the elements of an array of 10 integers.Display the original and the reversed array.
 
 #include <iostream>  // Include the iostream library for input and output operations
 using namespace std; // Use the standard namespace to avoid prefixing std:: to standard library names
 
 int main()
 {
-    int userInput[5]; // Declare an array of 5 integers
+    // Initialize the array with specific values
+    int userInput[10] = {5, 12, 7, 1, 19, 3, 8, 4, 15, 2}; // Example values
 
-    cout << "Enter five numbers: " << endl; // Prompt the user to enter five numbers
+    cout << "Original array: "; // Display the original array
 
-    // Loop to read 5 integers from the user into the array
-
-    for (int i = 0; i < 5; i++)
+    // Loop to print each element of the original array
+    for (int i : userInput) // Range-based for loop to iterate through each element in userInput
     {
-        cout << "Enter number " << i + 1 << ": "; // Prompt the user to enter the number at position i + 1
-        cin >> userInput[i];                      // Read the user input and store it in the array at index i
+        cout << i << " "; // Print each element followed by a space
     }
 
-    int maximum = userInput[0]; // Assume the first element is the maximum
+    cout << endl; // Move to the next line after printing the original array
 
-    // Loop to find the maximum element in the array
-    for (int i = 1; i < 5; i++)
+    cout << "Reversed array: "; // Display the reversed array
+
+    // Loop to print each element of the array in reverse order
+    for (int i = 9; i >= 0; i--) // Start a loop that iterates from 9 to 0
     {
-        if (userInput[i] > maximum) // Check if the current element is greater than the current maximum
-        {
-            maximum = userInput[i]; // Update maximum if the current element is greater
-        }
+        cout << userInput[i] << " "; // Print each element in reverse order followed by a space
     }
 
-    // Output the maximum element in the array
-    cout << "The maximum number in the array is: " << maximum << endl;
+    cout << endl; // Move to the next line after printing the reversed array
 
     return 0; // Return 0 to indicate successful execution
 }

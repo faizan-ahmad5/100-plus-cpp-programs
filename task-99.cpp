@@ -1,34 +1,24 @@
-// According to your grading system mark the user entered numbers as Grade A, B, C, D, F ?
+// Write a C++ program to check whether a character is alphabet or not .
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int userInput;
+    char userInput;
 
-    cout << "Enter your percentage : ";
+    cout << "Enter a character: ";
     cin >> userInput;
 
-    if (userInput >= 90 && userInput <= 100)
+    // ASCII codes range from 97('a')to 122('z')    // ASCII codes range from 65('A')to 90('Z')
+    if ((userInput >= 'a' && userInput <= 'z') || (userInput >= 'A' && userInput <= 'Z'))
     {
-        cout << "A";
-    }
-    else if (userInput >= 80 && userInput <= 89)
-    {
-        cout << "B";
-    }
-    else if (userInput >= 70 && userInput <= 79)
-    {
-        cout << "C";
-    }
-    else if (userInput >= 60 && userInput <= 69)
-    {
-        cout << "D";
+        cout << "The character is an alphabet." << endl;
+        cout << static_cast<int>(userInput);
     }
     else
     {
-        cout << "F";
+        cout << "The character is not an alphabet." << endl;
     }
 
     return 0;

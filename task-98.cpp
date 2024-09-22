@@ -1,41 +1,45 @@
-// Write a program to compare following strings with each other and display which string is smaller.
-// string str1 = "Hello";
-// string str2 = "Hi";
-// string str3 = "Air";
-// string str4 = "Bill";
-// string str5 = "Big";
+// Write a program to implement all conditions and display results.
+// bool found = true;
+// bool flag = false;
+// int num = 1;
+// double x = 3.4;
+// int a = 5, b = 8;
+// char ch = 'Z';
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    string str1 = "Hello";
-    string str2 = "Hi";
-    string str3 = "Air";
-    string str4 = "Bill";
-    string str5 = "Big";
+    bool found = true;
+    bool flag = false;
+    int num = 1;
+    double x = 3.4;
+    int a = 5, b = 8;
+    char ch = 'Z';
 
-    if (str1.length() < str2.length() && str1.length() < str3.length() && str1.length() < str4.length() && str1.length() < str5.length())
+    if (found)
     {
-        cout << "First string is samller that is : " << str1;
-    }
-    else if (str2.length() < str1.length() && str2.length() < str3.length() && str2.length() < str4.length() && str2.length() < str5.length())
-    {
-        cout << "Second string is samller that is: " << str2;
-    }
-    else if (str3.length() < str1.length() && str3.length() < str2.length() && str3.length() < str4.length() && str3.length() < str5.length())
-    {
-        cout << "Third string is smaller that is : " << str3;
-    }
-    else if (str4.length() < str1.length() && str4.length() < str2.length() && str4.length() < str3.length() && str4.length() < str5.length())
-    {
-        cout << "Fourth string is smaller that is : " << str4;
+        cout << "Found is true" << endl;
     }
     else
     {
-        cout << "Fifth string is smaller which is : " << str5;
+        cout << "Found is false" << endl;
     }
+
+    if (flag)
+    {
+        cout << "Flag is true" << endl;
+    }
+    else
+    {
+        cout << "Flag is false" << endl;
+    }
+
+    cout << "Num is: " << num << endl;
+    cout << "X is: " << x << endl;
+    cout << "A is: " << a << " and B is: " << b << endl;
+    cout << "Character is: " << ch << endl;
 
     return 0;
 }

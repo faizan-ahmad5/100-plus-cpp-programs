@@ -1,24 +1,28 @@
-// Write a C++ program to sort an array of 10 integers in ascending order.
+// Write a C++ program to find and print duplicate elements in an array of 10 integers.
 
 #include <iostream>
-#include <algorithm> // Include the algorithm library for the sort function
 using namespace std;
 
 int main()
 {
-    int userInput[10] = {2, 10, 32, 3, 1, 4, 6, 7, 8, 9}; // Declare an array of 10 integers and initialize it
+    // Initialize the array with specific values
+    int userInput[10] = {1, 2, 8, 3, 4, 5, 6, 9, 8, 9};
 
-    // Sort the array in ascending order using the sort function from the algorithm library
-    sort(userInput, userInput + 10);
-
-    cout << "Sorted array: "; // Display the sorted array
-
-    // Loop to print each element of the sorted array
+    // Loop through each element of the array
     for (int i = 0; i < 10; i++)
     {
-        cout << userInput[i] << " "; // Print each element followed by a space
+        // Check if the element at index i is a duplicate
+        for (int j = i + 1; j < 10; j++)
+        {
+            // If the current element matches another element in the array
+            if (userInput[i] == userInput[j])
+            {
+                // Print the duplicate element
+                cout << "Duplicate element found: " << userInput[i] << endl;
+                break; // Exit the inner loop to avoid printing the same duplicate element again
+            }
+        }
     }
 
-    cout << endl; // Move to the next line after printing the sorted array
-    return 0;     // Return 0 to indicate successful execution
+    return 0; // Return 0 to indicate successful execution
 }

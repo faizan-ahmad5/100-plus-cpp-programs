@@ -1,41 +1,34 @@
-// Write a menu driven C++ program that ask the user to choose the type in which he wants the output?
-// Either he wants to convert the entered Celsius temperature in to Fahrenheit or Kelvin ?
+// According to your grading system mark the user entered numbers as Grade A, B, C, D, F ?
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    cout << "Choose the type in which you want the output? " << endl;
-    cout << "1. Celsius to Fahrenheit" << endl;
-    cout << "2. Celsius to Kelvin" << endl;
+    int userInput;
 
-    int userChoice;
-    cout << "Enter a number: ";
-    cin >> userChoice;
+    cout << "Enter your percentage : ";
+    cin >> userInput;
 
-    float celsius;
-    float result;
-
-    if (userChoice == 1)
+    if (userInput >= 90 && userInput <= 100)
     {
-        cout << "Enter temperature in Celsius to convert into Fahrenheit: ";
-        cin >> celsius;
-        result = (celsius * 9 / 5) + 32;
-        cout << "The temperature in Fahrenheit is: " << result << "C" << endl;
+        cout << "A";
     }
-
-    else if (userChoice == 2)
+    else if (userInput >= 80 && userInput <= 89)
     {
-        cout << "Enter temperature in Celsius to convert into Kelvin: ";
-        cin >> celsius;
-        result = celsius + 273.15;
-        cout << "The temperature in Kelvin is: " << result << "K" << endl;
+        cout << "B";
     }
-
+    else if (userInput >= 70 && userInput <= 79)
+    {
+        cout << "C";
+    }
+    else if (userInput >= 60 && userInput <= 69)
+    {
+        cout << "D";
+    }
     else
     {
-        cout << "Invalid choice." << endl;
+        cout << "F";
     }
 
     return 0;

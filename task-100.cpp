@@ -1,45 +1,27 @@
-// Write a program to implement all conditions and display results.
-// bool found = true;
-// bool flag = false;
-// int num = 1;
-// double x = 3.4;
-// int a = 5, b = 8;
-// char ch = 'Z';
+// Write a C++ program to input angles of a triangle and check whether triangle is valid or not .
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    bool found = true;
-    bool flag = false;
-    int num = 1;
-    double x = 3.4;
-    int a = 5, b = 8;
-    char ch = 'Z';
+    float angle1, angle2, angle3;
 
-    if (found)
+    cout << "Enter the first angle of the triangle: ";
+    cin >> angle1;
+    cout << "Enter the second angle of the triangle: ";
+    cin >> angle2;
+    cout << "Enter the third angle of the triangle: ";
+    cin >> angle3;
+
+    if (angle1 + angle2 + angle3 == 180)
     {
-        cout << "Found is true" << endl;
+        cout << "The triangle is valid." << endl;
     }
     else
     {
-        cout << "Found is false" << endl;
+        cout << "The triangle is not valid." << endl;
     }
-
-    if (flag)
-    {
-        cout << "Flag is true" << endl;
-    }
-    else
-    {
-        cout << "Flag is false" << endl;
-    }
-
-    cout << "Num is: " << num << endl;
-    cout << "X is: " << x << endl;
-    cout << "A is: " << a << " and B is: " << b << endl;
-    cout << "Character is: " << ch << endl;
 
     return 0;
 }

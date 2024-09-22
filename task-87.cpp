@@ -1,32 +1,25 @@
-// Write a C++ program to declare an array of 10 integers, initialize it with values from 1 to 10, and print all the elements of the array.
+// Write a C++ program that reads 10 integers from the user into an array and calculates the sum of all the elements in the array.
 
 #include <iostream>  // Include the iostream library for input and output operations
 using namespace std; // Use the standard namespace to avoid prefixing std:: to standard library names
 
-int main() // Main function where the execution of the program begins
+int main()
 {
-    // Declare and initialize an array of 10 integers with values from 1 to 10
-    int integers[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int userInput[10]; // Declare an array of 10 integers
+    int sum = 0;       // Initialize sum to 0
 
-    /////////////////////////// FIRST METHOD //////////////////////////
+    cout << "Enter 10 numbers:" << endl; // Prompt the user to enter 10 numbers
 
-    //// Using range-based for loop to iterate through each element in the array
-    for (int integer : integers) // For each integer in the array 'integers'
+    // Loop to read 10 integers from the user into the array
+    for (int i = 0; i < 10; i++) // Start a loop that iterates from 0 to 9
     {
-        cout << integer << " "; // Print the current integer followed by a space
+        cout << "Enter number " << i + 1 << ": "; // Prompt the user to enter the number at position i + 1
+        cin >> userInput[i];                      // Read the user input and store it in the array at index i
+        sum += userInput[i];                      // Add the current element to the sum
     }
-    cout << endl; // Print a newline character after printing all elements
 
-    /////////////////////////// SECOND METHOD //////////////////////////
-
-    //// Using traditional for loop to iterate through each index of the array
-    // Calculate the length of the array
-    int lengthOfArray = sizeof(integers) / sizeof(integers[0]);
-
-    for (int i = 0; i < lengthOfArray; i++) // For each index from 0 to lengthOfIntegers - 1
-    {
-        cout << integers[i] << " "; // Print the element at the current index followed by a space
-    }
+    // Output the sum of all the elements in the array
+    cout << "The sum of all the elements in the array is: " << sum << endl; // Display the sum of the elements
 
     return 0; // Return 0 to indicate successful execution
 }
