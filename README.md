@@ -447,6 +447,49 @@ Write a C++ program to check whether a number is an Armstrong number or not.
 ### 120. **Convert Binary to Decimal**
 Write a C++ program to convert a binary number to the decimal number system.
 
+### 121. **Pascal Triangle**
+Write a program to print Pascal's triangle up to n rows.
+
+### 122. **Filter and Average of Array**
+Read the entries of an array of 10 integers from the user. Compute `x` as the average of the 10 entries, then display those entries that are greater than or equal to `x`. Finally, print the calculated average.
+
+### 123. **Minimum and Maximum Distance in Array**
+Write a C++ program to find the minimum and maximum distance between two numbers in an array.
+
+### 124. **Sort Array in Ascending and Descending Order**
+Take input of 10 numbers from the user, then sort and print them in both ascending and descending order.
+
+### 125. **Reverse Array**
+Take an array of 5 numbers from the user and print them in reverse order.
+
+### 126. **Second Greatest Float Number**
+Write a C++ program that prompts the user to enter 10 float numbers. The program should determine and display the second greatest number among the entered numbers. If there is no distinct second greatest number (i.e., all numbers are the same or there is only one unique number), inform the user accordingly.
+
+### 127. **Smallest to Greatest in Array**
+Take 10 numbers from the user, find the smallest number in the array, and replace it with the greatest number. Then print the updated array.
+
+### 128. **Most Occurring Element in Array**
+Take 10 numbers from the user, then display the most frequently occurring element along with its frequency.
+
+### 129. **Sum of Left Diagonal of Matrix**
+Write a C++ program to generate the sum of the left diagonal of a matrix.
+
+### 130. **Duplicate Values in 2D Array**
+Write a C++ program to find duplicate values in a 2D array.
+
+### 131. **Move Negative Elements to End of Array**
+Write a C++ program to move all negative elements of an array of integers to the end of the array without changing the order of the positive and negative elements.
+
+### 132. **Store and Display Temperature of Cities**
+Write a C++ program to store the temperature of two different cities for a week and display it. Also, find which city had the hottest temperature during the week.
+
+### 133. **Transpose of 3x3 Matrix**
+Write a C++ program to generate the transpose of a 3x3 matrix.
+
+### 134. **Array of Student Names**
+Write a C++ program that initializes an array with the names of 30 students. The program should iterate through the array and print each student's name along with their corresponding roll number (starting from 1).  
+The output should be in the format: "Student name is [Name], roll no is [Roll Number]."
+
 ## 📋 Topics Covered
 
 ### 1. **Basics of C++**
